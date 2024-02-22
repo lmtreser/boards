@@ -52,6 +52,7 @@ Información general sobre el uso de microcontroladores y SoCs.
 - [Adaptar 3.3V a 5V (y viceversa) en Arduino con Level Shifter](https://www.luisllamas.es/arduino-level-shifter/)
 - [Adaptadores de nivel entre 5V y 3.3V](https://www.inventable.eu/2017/05/03/adaptadores-nivel-5v-3-3v/)
 - [Bi-Directional Logic Level Converter Hookup Guide](https://learn.sparkfun.com/tutorials/bi-directional-logic-level-converter-hookup-guide/all)
+- [Logic Levels](https://learn.sparkfun.com/tutorials/logic-levels)
 
 ## Recursos
 
