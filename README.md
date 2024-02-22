@@ -14,6 +14,7 @@ Información sobre placas del ecosistema [Arduino](https://www.arduino.cc/).
 - [Arduino Nano](https://store.arduino.cc/products/arduino-nano)
 - [Arduino Uno Rev3](https://store.arduino.cc/products/arduino-uno-rev3)
 - [Arduino Uno Rev3 SMD](https://store.arduino.cc/products/arduino-uno-rev3-smd)
+- [Using the Arduino Pro Mini 3.3V](https://learn.sparkfun.com/tutorials/using-the-arduino-pro-mini-33v)
 
 ## Expressif Boards
 
