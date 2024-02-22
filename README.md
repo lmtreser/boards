@@ -29,6 +29,8 @@ Información sobre placas de la empresa [Expressif Systems](https://www.espressi
 
 Drivers para la comunicación entre placas y computadoras.
 
+- [CP2102 Classic USB Bridges](https://www.silabs.com/interface/usb-bridges/classic/device.cp2102)
+- [CP210x USB to UART Bridge VCP Drivers](https://www.silabs.com/developers/usb-to-uart-bridge-vcp-drivers)
 - [How to Install CH340 Drivers](https://learn.sparkfun.com/tutorials/how-to-install-ch340-drivers/all)
 - [La familia de chips CH340G](https://www.prometec.net/ch340g/)
 - [WCH CH340 Drivers](https://www.wch-ic.com/downloads/CH341SER_ZIP.html)
