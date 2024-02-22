@@ -4,9 +4,8 @@ Repositorio con información técnica acerca de placas programables.
 
 ## Arduino Boards
 
-Información sobre placas del ecosistema Arduino.
+Información sobre placas del ecosistema [Arduino](https://www.arduino.cc/).
 
-- [Arduino](https://www.arduino.cc/)
 - [Arduino Documentation](https://docs.arduino.cc/)
 - [Arduino Documentation GitHub Repository](https://github.com/arduino/docs-content)
 - [Arduino Hardware](https://docs.arduino.cc/hardware/)
@@ -19,6 +18,14 @@ Información sobre placas del ecosistema Arduino.
 ## Expressif Boards
 
 ## Raspberry Pi Boards
+
+## Drivers
+
+Drivers para la comunicación entre placas y computadoras.
+
+- [How to Install CH340 Drivers](https://learn.sparkfun.com/tutorials/how-to-install-ch340-drivers/all)
+- [La familia de chips CH340G](https://www.prometec.net/ch340g/)
+- [WCH CH340 Drivers](https://www.wch-ic.com/downloads/CH341SER_ZIP.html)
 
 ## TechInfo
 
