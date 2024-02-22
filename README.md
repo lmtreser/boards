@@ -22,10 +22,12 @@ Información sobre placas de la empresa [Expressif Systems](https://www.espressi
 - [150+ ESP8266 NodeMCU Projects, Tutorials and Guides with Arduino IDE](https://randomnerdtutorials.com/projects-esp8266/)
 - [Comparativa ESP8266 frente a ESP32, los SoC de Espressif para IoT](https://www.luisllamas.es/comparativa-esp8266-esp32/)
 - [Detalles de hardware y pins del ESP8266](https://www.luisllamas.es/detalles-del-esp8266-diferencias-con-arduino/)
+- [ESP32 Arduino Core](https://docs.espressif.com/projects/arduino-esp32/en/latest/index.html)
 - [ESP32 Pinout Reference: Which GPIO pins should you use?](https://randomnerdtutorials.com/esp32-pinout-reference-gpios/)
 - [ESP8266 Arduino Core](https://esp8266-arduino-spanish.readthedocs.io/es/latest/)
 - [ESP8266 Pinout Reference: Which GPIO pins should you use?](https://randomnerdtutorials.com/esp8266-pinout-reference-gpios/)
 - [ESP8266 WiFi SoC](https://www.espressif.com/en/products/socs/esp8266)
+- [Getting Started with the ESP32 Development Board](https://randomnerdtutorials.com/getting-started-with-esp32/)
 
 ## Raspberry Pi Boards
 
