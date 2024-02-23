@@ -36,6 +36,9 @@ Información sobre placas de la empresa [Expressif Systems](https://www.espressi
 Información sobre placas de la [Fundación Raspberry Pi](https://www.raspberrypi.org/).
 
 - [Raspberry Pi](https://www.raspberrypi.com/)
+- [Raspberry Pi Documentation](https://www.raspberrypi.com/documentation/pico-sdk/)
+- [Raspberry Pi Pico series](https://www.raspberrypi.com/products/raspberry-pi-pico/)
+- [Raspberry Pi Pico and Pico W](https://www.raspberrypi.com/documentation/microcontrollers/raspberry-pi-pico.html)
 
 ## Drivers
 
