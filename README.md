@@ -58,7 +58,7 @@ Información general sobre el uso de microcontroladores y SoCs.
 ## Recursos
 
 - [A Beginner’s guide to making an Arduino Shield PCB](https://aaroneiche.com/2010/06/24/a-beginners-guide-to-making-an-arduino-shield-pcb/)
+- [A useful and simple IO Shield for Arduino](https://www.open-electronics.org/a-useful-and-simple-io-shield-for-arduino/)
 - [Arduino Shield Buying & Designing](https://www.autodesk.com/products/eagle/blog/arduino-shield-buying-designing/)
 - [Arduino Shields v2](https://learn.sparkfun.com/tutorials/arduino-shields-v2)
 - [SparkFun-Eagle-Libraries](https://github.com/sparkfun/SparkFun-Eagle-Libraries)
-- [A useful and simple IO Shield for Arduino](https://www.open-electronics.org/a-useful-and-simple-io-shield-for-arduino/)
