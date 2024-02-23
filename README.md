@@ -12,6 +12,7 @@ Información sobre placas del ecosistema [Arduino](https://www.arduino.cc/).
 - [ATmega168/328P-Arduino Pin Mapping](https://docs.arduino.cc/retired/hacking/hardware/PinMapping168/)
 - [Arduino Mega 2560 Rev3](https://store.arduino.cc/products/arduino-mega-2560-rev3)
 - [Arduino Nano](https://store.arduino.cc/products/arduino-nano)
+- [Arduino Pro Mini](https://docs.arduino.cc/retired/boards/arduino-pro-mini/)
 - [Arduino Uno Rev3](https://store.arduino.cc/products/arduino-uno-rev3)
 - [Arduino Uno Rev3 SMD](https://store.arduino.cc/products/arduino-uno-rev3-smd)
 - [Using the Arduino Pro Mini 3.3V](https://learn.sparkfun.com/tutorials/using-the-arduino-pro-mini-33v)
