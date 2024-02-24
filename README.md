@@ -3,7 +3,7 @@
 Repositorio con información técnica acerca de placas programables.
 
 - `Arduino Boards` Información sobre placas del ecosistema [Arduino](https://www.arduino.cc/).
-- `docs` Tutoriales varios disponibles en línea [en este enlace]](https://lmtreser.github.io/boards/). 
+- `docs` Tutoriales varios disponibles en línea [en este enlace](https://lmtreser.github.io/boards/). 
 - `Drivers` Drivers para la comunicación entre placas y computadoras.
 - `Espressif Boards` Información sobre placas de la empresa [Expressif Systems](https://www.espressif.com/).
 - `Raspberry Pi Boards` Información sobre placas de la [Fundación Raspberry Pi](https://www.raspberrypi.org/).
