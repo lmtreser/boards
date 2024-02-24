@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>📑 Arduino Cores</title>
+    <link>https://lmtreser.github.io/boards/</link>
+    <description>Recent content on 📑 Arduino Cores</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>es</language>
+    <lastBuildDate>Sat, 24 Feb 2024 10:49:34 -0300</lastBuildDate><atom:link href="https://lmtreser.github.io/boards/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Expressif ESP8266</title>
+      <link>https://lmtreser.github.io/boards/pages/esp8266/</link>
+      <pubDate>Sat, 24 Feb 2024 10:49:30 -0300</pubDate>
+      
+      <guid>https://lmtreser.github.io/boards/pages/esp8266/</guid>
+      <description>ESP8266 </description>
+    </item>
+    
+    <item>
+      <title>Expressif ESP32</title>
+      <link>https://lmtreser.github.io/boards/pages/esp32/</link>
+      <pubDate>Sat, 24 Feb 2024 10:49:32 -0300</pubDate>
+      
+      <guid>https://lmtreser.github.io/boards/pages/esp32/</guid>
+      <description>ESP32 </description>
+    </item>
+    
+    <item>
+      <title>Raspberry Pi Pico</title>
+      <link>https://lmtreser.github.io/boards/pages/pico/</link>
+      <pubDate>Sat, 24 Feb 2024 10:49:34 -0300</pubDate>
+      
+      <guid>https://lmtreser.github.io/boards/pages/pico/</guid>
+      <description>Raspberry Pi Pico </description>
+    </item>
+    
+  </channel>
+</rss>
