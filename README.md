@@ -66,3 +66,10 @@ Información general sobre el uso de microcontroladores y SoCs.
 - [Arduino Shield Buying & Designing](https://www.autodesk.com/products/eagle/blog/arduino-shield-buying-designing/)
 - [Arduino Shields v2](https://learn.sparkfun.com/tutorials/arduino-shields-v2)
 - [SparkFun-Eagle-Libraries](https://github.com/sparkfun/SparkFun-Eagle-Libraries)
+
+## ToDo
+
+El repositorio está abierto a la colaboración para mejorarlo, o actualizarlo. El siguiente es el listado de pendientes:
+
+[ ] Generar un listado curado de bibliotecas útiles.
+[ ] Generar documentación acerca de la inclusión de los cores de terceros al Arduino IDE.
