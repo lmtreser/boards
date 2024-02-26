@@ -65,4 +65,4 @@ Repositorio con información técnica acerca de placas programables.
 El repositorio está abierto a la colaboración para mejorarlo, o actualizarlo. El siguiente es el listado de pendientes:
 
 - [ ] Generar un listado curado de bibliotecas útiles.
-- [ ] Generar documentación acerca de la inclusión de los cores de terceros al Arduino IDE.
+- [x] Generar documentación acerca de la inclusión de los cores de terceros al Arduino IDE.
