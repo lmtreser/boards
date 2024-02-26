@@ -1,37 +1,46 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>Pages on 📑 Arduino Cores</title>
+    <title>Pages on 📑 Boards</title>
     <link>https://lmtreser.github.io/boards/pages/</link>
-    <description>Recent content in Pages on 📑 Arduino Cores</description>
+    <description>Recent content in Pages on 📑 Boards</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>es</language>
     <lastBuildDate>Sat, 24 Feb 2024 10:49:34 -0300</lastBuildDate><atom:link href="https://lmtreser.github.io/boards/pages/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Expressif ESP8266</title>
+      <title>Expressif ESP8266 Arduino Core</title>
       <link>https://lmtreser.github.io/boards/pages/esp8266/</link>
       <pubDate>Sat, 24 Feb 2024 10:49:30 -0300</pubDate>
       
       <guid>https://lmtreser.github.io/boards/pages/esp8266/</guid>
-      <description>ESP8266 </description>
+      <description>&lt;p&gt;En este tutorial veremos cómo configurar el IDE de Arduino para poder programar placas basadas en el SoC &lt;strong&gt;ESP8266&lt;/strong&gt;, como por ejemplo NodeMCU y Wemos.&lt;/p&gt;</description>
     </item>
     
     <item>
-      <title>Expressif ESP32</title>
+      <title>Expressif ESP32 Arduino Core</title>
       <link>https://lmtreser.github.io/boards/pages/esp32/</link>
       <pubDate>Sat, 24 Feb 2024 10:49:32 -0300</pubDate>
       
       <guid>https://lmtreser.github.io/boards/pages/esp32/</guid>
-      <description>ESP32 </description>
+      <description>&lt;p&gt;En este tutorial veremos cómo configurar el IDE de Arduino para poder programar placas basadas en el SoC &lt;strong&gt;ESP32&lt;/strong&gt;.&lt;/p&gt;</description>
     </item>
     
     <item>
-      <title>Raspberry Pi Pico</title>
+      <title>Raspberry Pi Pico Arduino Core</title>
       <link>https://lmtreser.github.io/boards/pages/pico/</link>
       <pubDate>Sat, 24 Feb 2024 10:49:34 -0300</pubDate>
       
       <guid>https://lmtreser.github.io/boards/pages/pico/</guid>
-      <description>Raspberry Pi Pico </description>
+      <description>&lt;p&gt;En este tutorial veremos cómo configurar el IDE de Arduino para poder programar las placas de Raspberry Pi &lt;strong&gt;Pico&lt;/strong&gt; y &lt;strong&gt;Pico W&lt;/strong&gt;, y otras tantas basadas en el microcontrolador RP2040.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Bibliotecas Útiles</title>
+      <link>https://lmtreser.github.io/boards/pages/bibliotecas/</link>
+      <pubDate>Sat, 24 Feb 2024 10:49:34 -0300</pubDate>
+      
+      <guid>https://lmtreser.github.io/boards/pages/bibliotecas/</guid>
+      <description>&lt;p&gt;Listado de bibliotecas útiles.&lt;/p&gt;</description>
     </item>
     
   </channel>
