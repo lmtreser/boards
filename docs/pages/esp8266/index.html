@@ -70,8 +70,8 @@
   "keywords": [
     
   ],
-  "articleBody": "En este tutorial veremos cómo configurar el IDE de Arduino para poder programar placas basadas en el SoC ESP8266, como por ejemplo NodeMCU y Wemos.\nEste tutorial está realizado con la versión 2.3.2 de Arduino IDE, aunque el procedimiento es similar para versiones anteriores.\nPara poder trabajar con placas basadas en el ESP8266 simplemente tendremos que configurar la URL del paquete para que podamos agregarlas al gestor de placas del IDE de Arduino.\nPara esto, accedemos al menú siguiendo la ruta Archivo » Preferencias » URLs adicionales de gestor de placas, y en la ventana URLs adicionales de gestor de placas agregamos la siguiente línea:\nhttp://arduino.esp8266.com/stable/package_esp8266com_index.json Tal cual se ve en la siguiente animación:\nEl siguiente paso será dirigirnos al menú Herramientas » Placa » Gestor de placas... para desplegar la ventana del Gestor de placas. En la versión 2.x de Arduino IDE podemos acceder directamente pulsando en el botón GESTOR DE PLACAS que se encuentra en la barra lateral izquierda.\nUna vez dentro del Gestor de placas, buscaremos el Core ESP8266 como esp8266. Para instalar, simplemente debemos presionar el botón Instalar.\nUna vez finalizado el proceso, desde el menú Herramientas » Placa » esp8266 podremos acceder al listado de placas soportado.\nRecursos Documentación de ESP8266 Arduino Core ESP8266 core for Arduino Unofficial list of 3rd party boards support urls ",
-  "wordCount" : "220",
+  "articleBody": "En este tutorial veremos cómo configurar el IDE de Arduino para poder programar placas basadas en el SoC ESP8266, como por ejemplo NodeMCU y Wemos.\nEl ESP8266 es un chip de bajo costo fabricado por Espressif Systems, que incluye un procesador junto a conectividad Wi-Fi con un stack TCP/IP completo. El primer chip se hace conocido en los mercados alrededor de agosto de 2014 con el módulo ESP-01, desarrollado por la empresa AI-Thinker. Este pequeño módulo permite a otros microcontroladores conectarse a una red inalámbrica Wi-Fi y realizar conexiones simples con TCP/IP. Más en Wikipedia.\nEspecificaciones CPU RISC de 32-bit Tensilica Xtensa LX106 corriendo a 80 MHz RAM de instrucción de 64 kB, RAM de datos de 96 kB Memoria externa flash QSPI 512 kB/4 MB (máximo 16 MB) IEEE 802.11 b/g/n Wi-Fi con soporte de autenticación WEP y WPA/WPA2 16 GPIO, SPI, I2C, I2S DMA, UART 1 × ADC de 10-bit Instalación del Expressif ESP8266 Arduino Core Este tutorial está realizado con la versión 2.3.2 de Arduino IDE, aunque el procedimiento es similar para versiones anteriores.\nPara poder trabajar con placas basadas en el ESP8266 simplemente tendremos que configurar la URL del paquete para que podamos agregarlas al gestor de placas del IDE de Arduino.\nPara esto, accedemos al menú siguiendo la ruta Archivo » Preferencias » URLs adicionales de gestor de placas, y en la ventana URLs adicionales de gestor de placas agregamos la siguiente línea:\nhttp://arduino.esp8266.com/stable/package_esp8266com_index.json Tal cual se ve en la siguiente animación:\nEl siguiente paso será dirigirnos al menú Herramientas » Placa » Gestor de placas... para desplegar la ventana del Gestor de placas. En la versión 2.x de Arduino IDE podemos acceder directamente pulsando en el botón GESTOR DE PLACAS que se encuentra en la barra lateral izquierda.\nUna vez dentro del Gestor de placas, buscaremos el Core ESP8266 como esp8266. Para instalar, simplemente debemos presionar el botón Instalar.\nUna vez finalizado el proceso, desde el menú Herramientas » Placa » esp8266 podremos acceder al listado de placas soportado.\nPlacas soportadas La lista completa y actualizada en la documentación oficial.\n4D Systems gen4 IoD Range Adafruit Feather HUZZAH ESP8266 Amperka WiFi Slot Digistump Oak DOIT ESP-Mx DevKit (ESP8285) ESPDuino (ESP-13 Module) ESPectro Core ESPino (ESP-12 Module) ESPPresso Lite 1.0 ESPPresso Lite 2.0 ESP8266 Thing Dev ESP8266 Thing Generic ESP8266 Module Generic ESP8285 Module Invent One ITEAD Sonoff Lifely Agrumino Lemon v4 LOLIN(WEMOS) D1 ESP-WROOM-02 LOLIN(WEMOS) D1 mini (clone) LOLIN(WEMOS) D1 mini Lite LOLIN(WEMOS) D1 mini Pro LOLIN(WEMOS) D1 R1 LOLIN(WEMOS) D1 R2 \u0026 mini NodeMCU 0.9 (ESP-12 Module) NodeMCU 1.0 (ESP-12E Module) Olimex MOD-WIFI-ESP8266(-DEV) Phoenix 1.0 Phoenix 2.0 Schirmilabs Eduino WiFi Seeed Wio Link SparkFun Blynk Board SparkFun ESP8266 Thing SweetPea ESP-210 ThaiEasyElec’s ESPino WiFi Kit 8 WifInfo WiFiduino XinaBox CW01 Recursos Documentación de ESP8266 Arduino Core ESP8266 core for Arduino Installing additional cores Unofficial list of 3rd party boards support urls ",
+  "wordCount" : "478",
   "inLanguage": "en",
   "datePublished": "2024-02-24T10:49:30-03:00",
   "dateModified": "2024-02-24T10:49:30-03:00",
@@ -149,11 +149,44 @@
     <h1 class="post-title">
       Expressif ESP8266 Arduino Core
     </h1>
-    <div class="post-meta"><span title='2024-02-24 10:49:30 -0300 -03'>February 24, 2024</span>&nbsp;·&nbsp;2 min
+    <div class="post-meta"><span title='2024-02-24 10:49:30 -0300 -03'>February 24, 2024</span>&nbsp;·&nbsp;3 min
 
 </div>
-  </header> 
+  </header> <div class="toc">
+    <details  open>
+        <summary accesskey="c" title="(Alt + C)">
+            <span class="details">Table of Contents</span>
+        </summary>
+
+        <div class="inner"><ul>
+                <li>
+                    <a href="#especificaciones" aria-label="Especificaciones">Especificaciones</a></li>
+                <li>
+                    <a href="#instalaci%c3%b3n-del-expressif-esp8266-arduino-core" aria-label="Instalación del Expressif ESP8266 Arduino Core">Instalación del Expressif ESP8266 Arduino Core</a></li>
+                <li>
+                    <a href="#placas-soportadas" aria-label="Placas soportadas">Placas soportadas</a></li>
+                <li>
+                    <a href="#recursos" aria-label="Recursos">Recursos</a>
+                </li>
+            </ul>
+        </div>
+    </details>
+</div>
+
   <div class="post-content"><p>En este tutorial veremos cómo configurar el IDE de Arduino para poder programar placas basadas en el SoC <strong>ESP8266</strong>, como por ejemplo NodeMCU y Wemos.</p>
+<p>El <strong>ESP8266</strong> es un chip de bajo costo fabricado por Espressif Systems, que incluye un procesador junto a conectividad Wi-Fi con un stack TCP/IP completo. El primer chip se hace conocido en los mercados alrededor de agosto de 2014 con el módulo ESP-01, desarrollado por la empresa AI-Thinker. Este pequeño módulo permite a otros microcontroladores conectarse a una red inalámbrica Wi-Fi y realizar conexiones simples con TCP/IP. <a href="https://en.m.wikipedia.org/wiki/ESP8266">Más en Wikipedia</a>.</p>
+<p><img loading="lazy" src="../img/esp8266.png#center" alt=""  />
+</p>
+<h2 id="especificaciones">Especificaciones<a hidden class="anchor" aria-hidden="true" href="#especificaciones">#</a></h2>
+<ul>
+<li>CPU RISC de 32-bit Tensilica Xtensa LX106 corriendo a 80 MHz</li>
+<li>RAM de instrucción de 64 kB, RAM de datos de 96 kB</li>
+<li>Memoria externa flash QSPI 512 kB/4 MB (máximo 16 MB)</li>
+<li>IEEE 802.11 b/g/n Wi-Fi con soporte de autenticación WEP y WPA/WPA2</li>
+<li>16 GPIO, SPI, I2C, I2S DMA, UART</li>
+<li>1 × ADC de 10-bit</li>
+</ul>
+<h2 id="instalación-del-expressif-esp8266-arduino-core">Instalación del Expressif ESP8266 Arduino Core<a hidden class="anchor" aria-hidden="true" href="#instalación-del-expressif-esp8266-arduino-core">#</a></h2>
 <blockquote>
 <p>Este tutorial está realizado con la versión 2.3.2 de Arduino IDE, aunque el procedimiento es similar para versiones anteriores.</p>
 </blockquote>
@@ -172,10 +205,89 @@
 <p>Una vez finalizado el proceso, desde el menú <code>Herramientas » Placa » esp8266</code> podremos acceder al listado de placas soportado.</p>
 <p><img loading="lazy" src="../img/esp8266.gif#center" alt=""  />
 </p>
+<h2 id="placas-soportadas">Placas soportadas<a hidden class="anchor" aria-hidden="true" href="#placas-soportadas">#</a></h2>
+<p>La lista completa y actualizada en la <a href="https://arduino-esp8266.readthedocs.io/en/3.1.2/boards.html">documentación oficial</a>.</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>4D Systems gen4 IoD Range</td>
+<td>Adafruit Feather HUZZAH ESP8266</td>
+<td>Amperka WiFi Slot</td>
+</tr>
+<tr>
+<td>Digistump Oak</td>
+<td>DOIT ESP-Mx DevKit (ESP8285)</td>
+<td>ESPDuino (ESP-13 Module)</td>
+</tr>
+<tr>
+<td>ESPectro Core</td>
+<td>ESPino (ESP-12 Module)</td>
+<td>ESPPresso Lite 1.0</td>
+</tr>
+<tr>
+<td>ESPPresso Lite 2.0</td>
+<td>ESP8266 Thing Dev</td>
+<td>ESP8266 Thing</td>
+</tr>
+<tr>
+<td>Generic ESP8266 Module</td>
+<td>Generic ESP8285 Module</td>
+<td>Invent One</td>
+</tr>
+<tr>
+<td>ITEAD Sonoff</td>
+<td>Lifely Agrumino Lemon v4</td>
+<td>LOLIN(WEMOS) D1 ESP-WROOM-02</td>
+</tr>
+<tr>
+<td>LOLIN(WEMOS) D1 mini (clone)</td>
+<td>LOLIN(WEMOS) D1 mini Lite</td>
+<td>LOLIN(WEMOS) D1 mini Pro</td>
+</tr>
+<tr>
+<td>LOLIN(WEMOS) D1 R1</td>
+<td>LOLIN(WEMOS) D1 R2 &amp; mini</td>
+<td>NodeMCU 0.9 (ESP-12 Module)</td>
+</tr>
+<tr>
+<td>NodeMCU 1.0 (ESP-12E Module)</td>
+<td>Olimex MOD-WIFI-ESP8266(-DEV)</td>
+<td>Phoenix 1.0</td>
+</tr>
+<tr>
+<td>Phoenix 2.0</td>
+<td>Schirmilabs Eduino WiFi</td>
+<td>Seeed Wio Link</td>
+</tr>
+<tr>
+<td>SparkFun Blynk Board</td>
+<td>SparkFun ESP8266 Thing</td>
+<td>SweetPea ESP-210</td>
+</tr>
+<tr>
+<td>ThaiEasyElec’s ESPino</td>
+<td>WiFi Kit 8</td>
+<td>WifInfo</td>
+</tr>
+<tr>
+<td>WiFiduino</td>
+<td>XinaBox CW01</td>
+<td></td>
+</tr>
+</tbody>
+</table>
 <h2 id="recursos">Recursos<a hidden class="anchor" aria-hidden="true" href="#recursos">#</a></h2>
 <ul>
 <li><a href="https://esp8266-arduino-spanish.readthedocs.io/es/latest/">Documentación de ESP8266 Arduino Core</a></li>
 <li><a href="https://github.com/esp8266/Arduino">ESP8266 core for Arduino</a></li>
+<li><a href="https://docs.arduino.cc/learn/starting-guide/cores/">Installing additional cores</a></li>
 <li><a href="https://github.com/arduino/Arduino/wiki/Unofficial-list-of-3rd-party-boards-support-urls">Unofficial list of 3rd party boards support urls</a></li>
 </ul>
 

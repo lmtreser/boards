@@ -70,8 +70,8 @@
   "keywords": [
     
   ],
-  "articleBody": "En este tutorial veremos cómo configurar el IDE de Arduino para poder programar las placas de Raspberry Pi Pico y Pico W, y otras tantas basadas en el microcontrolador RP2040.\nEste tutorial está realizado con la versión 2.3.2 de Arduino IDE, aunque el procedimiento es similar para versiones anteriores.\nPara poder instalar el Raspberry Pi Pico Core debemos seguir los mismos pasos explicados en el tutorial Expressif ESP8266 Arduino Core con una diferencia: en la ventana URLs adicionales de gestor de placas debemos agregar la siguiente línea:\nhttps://github.com/earlephilhower/arduino-pico/releases/download/global/package_rp2040_index.json Luego, en el Gestor de placas buscaremos el Raspberry Pi Pico Arduino core como pico para instalarlo.\nUna vez finalizado el proceso, desde el menú Herramientas » Placa » Raspberry Pi Pico/RP2040 podremos acceder al listado de placas soportado.\nRecursos Documentation for the Raspberry Pi Pico Arduino core Raspberry Pi Pico Arduino core, for all RP2040 boards Unofficial list of 3rd party boards support urls ",
-  "wordCount" : "153",
+  "articleBody": "En este tutorial veremos cómo configurar el IDE de Arduino para poder programar las placas de Raspberry Pi Pico y Pico W, y otras tantas basadas en el microcontrolador RP2040.\nEl RP2040 es un microcontrolador dual-core ARM Cortex-M0+ 32 bits de Raspberry Pi Ltd. En enero de 2021, se lanzó como parte de la placa Raspberry Pi Pico. Más en Wikipedia.\nEspecificaciones Procesador Arm Cortex-M0+ de doble núcleo Reloj flexible que funciona hasta 133 MHz SRAM 264 kB UART × 2, SPI × 2, I2C × 2, PWM × 16 Controlador USB 1.1 Programmable I/O (PIO) × 8 Sensor de temperatura Instalación del Raspberry Pi Pico Arduino Core Este tutorial está realizado con la versión 2.3.2 de Arduino IDE, aunque el procedimiento es similar para versiones anteriores.\nPara poder instalar el Raspberry Pi Pico Core de Earle F. Philhower, III debemos seguir los mismos pasos explicados en el tutorial Expressif ESP8266 Arduino Core con una diferencia: en la ventana URLs adicionales de gestor de placas debemos agregar la siguiente línea:\nhttps://github.com/earlephilhower/arduino-pico/releases/download/global/package_rp2040_index.json Luego, en el Gestor de placas buscaremos el Raspberry Pi Pico Arduino core como pico para instalarlo.\nUna vez finalizado el proceso, desde el menú Herramientas » Placa » Raspberry Pi Pico/RP2040 podremos acceder al listado de placas soportado.\nPlacas soportadas Raspberry Pi Pico Raspberry Pi Pico W 0xCB Helios Adafruit Feather RP2040 Adafruit Feather RP2040 SCORPIO Adafruit ItsyBitsy RP2040 Adafruit KB2040 Adafruit Macropad RP2040 Adafruit Metro RP2040 Adafruit QTPy RP2040 Adafruit STEMMA Friend RP2040 Adafruit Trinkey RP2040 QT Arduino Nano RP2040 Connect ArtronShop RP2 Nano BridgeTek IDM2040-7A Cytron Maker Pi RP2040 Cytron Maker Nano RP2040 Cytron Maker Uno RP2040 DatanoiseTV PicoADK+ Degz Suibo RP2040 DeRuiLab FlyBoard2040 Core DFRobot Beetle RP2040 ElectronicCats Hunter Cat NFC ExtremeElectronics RC2040 Invector Labs Challenger RP2040 WiFi Invector Labs Challenger RP2040 WiFi/BLE Invector Labs Challenger RP2040 WiFi6/BLE Invector Labs Challenger NB RP2040 WiFi Invector Labs Challenger RP2040 LTE Invector Labs Challenger RP2040 LoRa Invector Labs Challenger RP2040 SubGHz Invector Labs Challenger RP2040 SD/RTC Invector Labs Challenger RP2040 UWB Invector Labs RPICO32 Melopero Cookie RP2040 Melopero Shake RP2040 Neko Systems BL2040 Mini nullbits Bit-C PRO Pimoroni PGA2040 Pimoroni Plasma2040 Pimoroni Tiny2040 RAKwireless RAK11300 Redscorp RP2040-Eins Redscorp RP2040-ProMini Sea-Picro Seeed Indicator RP2040 Seeed XIAO RP2040 Silicognition RP2040-Shim Solder Party RP2040 Stamp SparkFun ProMicro RP2040 SparkFun Thing Plus RP2040 uPesy RP2040 DevKit VCC-GND YD-RP2040 Viyalab Mizu RP2040 Waveshare RP2040 Zero Waveshare RP2040 One Waveshare RP2040 Plus Waveshare RP2040 LCD 0.96 Waveshare RP2040 LCD 1.28 WIZnet W5100S-EVB-Pico WIZnet W5500-EVB-Pico WIZnet WizFi360-EVB-Pico Generic (configurable flash, I/O pins) Recursos Documentation for the Raspberry Pi Pico Arduino core Raspberry Pi Pico Arduino core, for all RP2040 boards ",
+  "wordCount" : "436",
   "inLanguage": "en",
   "datePublished": "2024-02-24T10:49:34-03:00",
   "dateModified": "2024-02-24T10:49:34-03:00",
@@ -149,25 +149,175 @@
     <h1 class="post-title">
       Raspberry Pi Pico Arduino Core
     </h1>
-    <div class="post-meta"><span title='2024-02-24 10:49:34 -0300 -03'>February 24, 2024</span>&nbsp;·&nbsp;1 min
+    <div class="post-meta"><span title='2024-02-24 10:49:34 -0300 -03'>February 24, 2024</span>&nbsp;·&nbsp;3 min
 
 </div>
-  </header> 
+  </header> <div class="toc">
+    <details  open>
+        <summary accesskey="c" title="(Alt + C)">
+            <span class="details">Table of Contents</span>
+        </summary>
+
+        <div class="inner"><ul>
+                <li>
+                    <a href="#especificaciones" aria-label="Especificaciones">Especificaciones</a></li>
+                <li>
+                    <a href="#instalaci%c3%b3n-del-raspberry-pi-pico-arduino-core" aria-label="Instalación del Raspberry Pi Pico Arduino Core">Instalación del Raspberry Pi Pico Arduino Core</a></li>
+                <li>
+                    <a href="#placas-soportadas" aria-label="Placas soportadas">Placas soportadas</a></li>
+                <li>
+                    <a href="#recursos" aria-label="Recursos">Recursos</a>
+                </li>
+            </ul>
+        </div>
+    </details>
+</div>
+
   <div class="post-content"><p>En este tutorial veremos cómo configurar el IDE de Arduino para poder programar las placas de Raspberry Pi <strong>Pico</strong> y <strong>Pico W</strong>, y otras tantas basadas en el microcontrolador RP2040.</p>
+<p>El <strong>RP2040</strong> es un microcontrolador dual-core ARM Cortex-M0+ 32 bits de Raspberry Pi Ltd. En enero de 2021, se lanzó como parte de la placa Raspberry Pi Pico. <a href="https://en.m.wikipedia.org/wiki/RP2040">Más en Wikipedia</a>.</p>
+<p><img loading="lazy" src="../img/rp2040.png#center" alt=""  />
+</p>
+<h2 id="especificaciones">Especificaciones<a hidden class="anchor" aria-hidden="true" href="#especificaciones">#</a></h2>
+<ul>
+<li>Procesador Arm Cortex-M0+ de doble núcleo</li>
+<li>Reloj flexible que funciona hasta 133 MHz</li>
+<li>SRAM 264 kB</li>
+<li>UART × 2, SPI × 2, I2C × 2, PWM × 16</li>
+<li>Controlador USB 1.1</li>
+<li>Programmable I/O (PIO) × 8</li>
+<li>Sensor de temperatura</li>
+</ul>
+<h2 id="instalación-del-raspberry-pi-pico-arduino-core">Instalación del Raspberry Pi Pico Arduino Core<a hidden class="anchor" aria-hidden="true" href="#instalación-del-raspberry-pi-pico-arduino-core">#</a></h2>
 <blockquote>
 <p>Este tutorial está realizado con la versión 2.3.2 de Arduino IDE, aunque el procedimiento es similar para versiones anteriores.</p>
 </blockquote>
-<p>Para poder instalar el Raspberry Pi Pico Core debemos seguir los mismos pasos explicados en el tutorial <a href="../esp8266/">Expressif ESP8266 Arduino Core</a> con una diferencia: en la ventana <code>URLs adicionales de gestor de placas</code> debemos agregar la siguiente línea:</p>
+<p>Para poder instalar el Raspberry Pi Pico Core de <a href="mailto:earlephilhower@yahoo.com">Earle F. Philhower, III</a> debemos seguir los mismos pasos explicados en el tutorial <a href="../esp8266/">Expressif ESP8266 Arduino Core</a> con una diferencia: en la ventana <code>URLs adicionales de gestor de placas</code> debemos agregar la siguiente línea:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>https://github.com/earlephilhower/arduino-pico/releases/download/global/package_rp2040_index.json
 </span></span></code></pre></div><p>Luego, en el <code>Gestor de placas</code> buscaremos el Raspberry Pi Pico Arduino core como <code>pico</code> para instalarlo.</p>
 <p><img loading="lazy" src="../img/pico.gif#center" alt=""  />
 </p>
 <p>Una vez finalizado el proceso, desde el menú <code>Herramientas » Placa » Raspberry Pi Pico/RP2040</code> podremos acceder al listado de placas soportado.</p>
+<h2 id="placas-soportadas">Placas soportadas<a hidden class="anchor" aria-hidden="true" href="#placas-soportadas">#</a></h2>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Raspberry Pi Pico</td>
+<td>Raspberry Pi Pico W</td>
+<td>0xCB Helios</td>
+</tr>
+<tr>
+<td>Adafruit Feather RP2040</td>
+<td>Adafruit Feather RP2040 SCORPIO</td>
+<td>Adafruit ItsyBitsy RP2040</td>
+</tr>
+<tr>
+<td>Adafruit KB2040</td>
+<td>Adafruit Macropad RP2040</td>
+<td>Adafruit Metro RP2040</td>
+</tr>
+<tr>
+<td>Adafruit QTPy RP2040</td>
+<td>Adafruit STEMMA Friend RP2040</td>
+<td>Adafruit Trinkey RP2040 QT</td>
+</tr>
+<tr>
+<td>Arduino Nano RP2040 Connect</td>
+<td>ArtronShop RP2 Nano</td>
+<td>BridgeTek IDM2040-7A</td>
+</tr>
+<tr>
+<td>Cytron Maker Pi RP2040</td>
+<td>Cytron Maker Nano RP2040</td>
+<td>Cytron Maker Uno RP2040</td>
+</tr>
+<tr>
+<td>DatanoiseTV PicoADK+</td>
+<td>Degz Suibo RP2040</td>
+<td>DeRuiLab FlyBoard2040 Core</td>
+</tr>
+<tr>
+<td>DFRobot Beetle RP2040</td>
+<td>ElectronicCats Hunter Cat NFC</td>
+<td>ExtremeElectronics RC2040</td>
+</tr>
+<tr>
+<td>Invector Labs Challenger RP2040 WiFi</td>
+<td>Invector Labs Challenger RP2040 WiFi/BLE</td>
+<td>Invector Labs Challenger RP2040 WiFi6/BLE</td>
+</tr>
+<tr>
+<td>Invector Labs Challenger NB RP2040 WiFi</td>
+<td>Invector Labs Challenger RP2040 LTE</td>
+<td>Invector Labs Challenger RP2040 LoRa</td>
+</tr>
+<tr>
+<td>Invector Labs Challenger RP2040 SubGHz</td>
+<td>Invector Labs Challenger RP2040 SD/RTC</td>
+<td>Invector Labs Challenger RP2040 UWB</td>
+</tr>
+<tr>
+<td>Invector Labs RPICO32</td>
+<td>Melopero Cookie RP2040</td>
+<td>Melopero Shake RP2040</td>
+</tr>
+<tr>
+<td>Neko Systems BL2040 Mini</td>
+<td>nullbits Bit-C PRO</td>
+<td>Pimoroni PGA2040</td>
+</tr>
+<tr>
+<td>Pimoroni Plasma2040</td>
+<td>Pimoroni Tiny2040</td>
+<td>RAKwireless RAK11300</td>
+</tr>
+<tr>
+<td>Redscorp RP2040-Eins</td>
+<td>Redscorp RP2040-ProMini</td>
+<td>Sea-Picro</td>
+</tr>
+<tr>
+<td>Seeed Indicator RP2040</td>
+<td>Seeed XIAO RP2040</td>
+<td>Silicognition RP2040-Shim</td>
+</tr>
+<tr>
+<td>Solder Party RP2040 Stamp</td>
+<td>SparkFun ProMicro RP2040</td>
+<td>SparkFun Thing Plus RP2040</td>
+</tr>
+<tr>
+<td>uPesy RP2040 DevKit</td>
+<td>VCC-GND YD-RP2040</td>
+<td>Viyalab Mizu RP2040</td>
+</tr>
+<tr>
+<td>Waveshare RP2040 Zero</td>
+<td>Waveshare RP2040 One</td>
+<td>Waveshare RP2040 Plus</td>
+</tr>
+<tr>
+<td>Waveshare RP2040 LCD 0.96</td>
+<td>Waveshare RP2040 LCD 1.28</td>
+<td>WIZnet W5100S-EVB-Pico</td>
+</tr>
+<tr>
+<td>WIZnet W5500-EVB-Pico</td>
+<td>WIZnet WizFi360-EVB-Pico</td>
+<td>Generic (configurable flash, I/O pins)</td>
+</tr>
+</tbody>
+</table>
 <h2 id="recursos">Recursos<a hidden class="anchor" aria-hidden="true" href="#recursos">#</a></h2>
 <ul>
 <li><a href="https://arduino-pico.readthedocs.io/en/latest/">Documentation for the Raspberry Pi Pico Arduino core</a></li>
 <li><a href="https://github.com/earlephilhower/arduino-pico/">Raspberry Pi Pico Arduino core, for all RP2040 boards</a></li>
-<li><a href="https://github.com/arduino/Arduino/wiki/Unofficial-list-of-3rd-party-boards-support-urls">Unofficial list of 3rd party boards support urls</a></li>
 </ul>
 
   </div>
