@@ -9,6 +9,13 @@
     <lastBuildDate>Sat, 24 Feb 2024 10:49:34 -0300</lastBuildDate>
     <atom:link href="https://lmtreser.github.io/boards/Drivers/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Instalación Drivers CH340G</title>
+      <link>https://lmtreser.github.io/boards/Drivers/ch340g/</link>
+      <pubDate>Sat, 24 Feb 2024 10:49:34 -0300</pubDate>
+      <guid>https://lmtreser.github.io/boards/Drivers/ch340g/</guid>
+      <description>La primera vez que conectamos una placa a la computadora probablemente ésta no vea el puerto COM disponible. Esto es debido a la falta de controladores (drivers) instalados. Para saber que controlador hay que instalar, hay que mirar con detalle el chip que la placa utiliza (cercano al puerto USB), en este caso abordaremos la instalación de los controladores para el chip CH340 de WCH.&#xA;Instalación de controladores CH340 en Windows Prueba de los controladores CH340 Recursos Instalación de controladores CH340 en Windows El primer paso es descargar los controladores USB CH340 desde el sitio web oficial de WCH.</description>
+    </item>
+    <item>
       <title>Instalación Drivers CP2102/CP2104</title>
       <link>https://lmtreser.github.io/boards/Drivers/cp210x/</link>
       <pubDate>Sat, 24 Feb 2024 10:49:34 -0300</pubDate>
