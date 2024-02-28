@@ -2,25 +2,26 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://lmtreser.github.io/boards/pages/esp8266/</loc>
-    <lastmod>2024-02-24T10:49:30-03:00</lastmod>
-  </url><url>
-    <loc>https://lmtreser.github.io/boards/pages/esp32/</loc>
-    <lastmod>2024-02-24T10:49:32-03:00</lastmod>
-  </url><url>
-    <loc>https://lmtreser.github.io/boards/pages/pico/</loc>
-    <lastmod>2024-02-24T10:49:34-03:00</lastmod>
-  </url><url>
-    <loc>https://lmtreser.github.io/boards/pages/bibliotecas/</loc>
+    <loc>https://lmtreser.github.io/boards/Bibliotecas/bibliotecas/</loc>
     <lastmod>2024-02-24T10:49:34-03:00</lastmod>
   </url><url>
     <loc>https://lmtreser.github.io/boards/</loc>
     <lastmod>2024-02-24T10:49:34-03:00</lastmod>
   </url><url>
-    <loc>https://lmtreser.github.io/boards/pages/</loc>
+    <loc>https://lmtreser.github.io/boards/Cores/esp8266/</loc>
+    <lastmod>2024-02-24T10:49:30-03:00</lastmod>
+  </url><url>
+    <loc>https://lmtreser.github.io/boards/Cores/esp32/</loc>
+    <lastmod>2024-02-24T10:49:32-03:00</lastmod>
+  </url><url>
+    <loc>https://lmtreser.github.io/boards/Cores/pico/</loc>
     <lastmod>2024-02-24T10:49:34-03:00</lastmod>
   </url><url>
-    <loc>https://lmtreser.github.io/boards/categories/</loc>
+    <loc>https://lmtreser.github.io/boards/Bibliotecas/</loc>
+    <lastmod>2024-02-24T10:49:34-03:00</lastmod>
+  </url><url>
+    <loc>https://lmtreser.github.io/boards/Cores/</loc>
+    <lastmod>2024-02-24T10:49:34-03:00</lastmod>
   </url><url>
     <loc>https://lmtreser.github.io/boards/tags/</loc>
   </url>

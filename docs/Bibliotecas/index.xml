@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Bibliotecas on Boards</title>
+    <link>https://lmtreser.github.io/boards/Bibliotecas/</link>
+    <description>Recent content in Bibliotecas on Boards</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>es</language>
+    <lastBuildDate>Sat, 24 Feb 2024 10:49:34 -0300</lastBuildDate>
+    <atom:link href="https://lmtreser.github.io/boards/Bibliotecas/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Bibliotecas Útiles</title>
+      <link>https://lmtreser.github.io/boards/Bibliotecas/bibliotecas/</link>
+      <pubDate>Sat, 24 Feb 2024 10:49:34 -0300</pubDate>
+      <guid>https://lmtreser.github.io/boards/Bibliotecas/bibliotecas/</guid>
+      <description>Listado de bibliotecas útiles.&#xA;Biblioteca Autor Plataforma Descripción DHT sensor library Adafruit AVR Sensores de temperatura y humedad DHT11, DHT22, etc. 🔗 DallasTemperature Miles Burton AVR Sensores de temperatura de Maxim (DS18B20, DS18S20, DS1822, DS1820, MAX31820, MAX31850) 🔗 </description>
+    </item>
+  </channel>
+</rss>
