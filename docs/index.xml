@@ -16,6 +16,13 @@
       <description>Listado de bibliotecas útiles.&#xA;Biblioteca Autor Plataforma Descripción DHT sensor library Adafruit AVR Sensores de temperatura y humedad DHT11, DHT22, etc. 🔗 DallasTemperature Miles Burton AVR Sensores de temperatura de Maxim (DS18B20, DS18S20, DS1822, DS1820, MAX31820, MAX31850) 🔗 </description>
     </item>
     <item>
+      <title>Instalación Drivers CP2102/CP2104</title>
+      <link>https://lmtreser.github.io/boards/Drivers/cp210x/</link>
+      <pubDate>Sat, 24 Feb 2024 10:49:34 -0300</pubDate>
+      <guid>https://lmtreser.github.io/boards/Drivers/cp210x/</guid>
+      <description>La primera vez que conectamos una placa a la computadora probablemente ésta no vea el puerto COM disponible. Esto es debido a la falta de controladores (drivers) instalados. Para saber que controlador hay que instalar, hay que mirar con detalle el chip que la placa utiliza (cercano al puerto USB), en este caso abordaremos la instalación de los controladores para el chip CP2102 de Silabs.&#xA;Instalación de controladores CP210x en Windows Prueba de los controladores CP210x Recursos Este tutorial está realizado con una placa ESP32, pero el proceso es similar para otros tipos de placas que utilicen el mismo chip, por ejemplo, NodeMCU ESP8266.</description>
+    </item>
+    <item>
       <title>Expressif ESP8266 Arduino Core</title>
       <link>https://lmtreser.github.io/boards/Cores/esp8266/</link>
       <pubDate>Sat, 24 Feb 2024 10:49:30 -0300</pubDate>

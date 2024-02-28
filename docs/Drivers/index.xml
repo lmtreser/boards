@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Drivers on Boards</title>
+    <link>https://lmtreser.github.io/boards/Drivers/</link>
+    <description>Recent content in Drivers on Boards</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>es</language>
+    <lastBuildDate>Sat, 24 Feb 2024 10:49:34 -0300</lastBuildDate>
+    <atom:link href="https://lmtreser.github.io/boards/Drivers/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Instalación Drivers CP2102/CP2104</title>
+      <link>https://lmtreser.github.io/boards/Drivers/cp210x/</link>
+      <pubDate>Sat, 24 Feb 2024 10:49:34 -0300</pubDate>
+      <guid>https://lmtreser.github.io/boards/Drivers/cp210x/</guid>
+      <description>La primera vez que conectamos una placa a la computadora probablemente ésta no vea el puerto COM disponible. Esto es debido a la falta de controladores (drivers) instalados. Para saber que controlador hay que instalar, hay que mirar con detalle el chip que la placa utiliza (cercano al puerto USB), en este caso abordaremos la instalación de los controladores para el chip CP2102 de Silabs.&#xA;Instalación de controladores CP210x en Windows Prueba de los controladores CP210x Recursos Este tutorial está realizado con una placa ESP32, pero el proceso es similar para otros tipos de placas que utilicen el mismo chip, por ejemplo, NodeMCU ESP8266.</description>
+    </item>
+  </channel>
+</rss>
