@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://lmtreser.github.io/boards/Bibliotecas/bibliotecas/</loc>
+    <loc>https://lmtreser.github.io/boards/Bibliotecas/instalar_libs/</loc>
     <lastmod>2024-02-24T10:49:34-03:00</lastmod>
   </url><url>
     <loc>https://lmtreser.github.io/boards/Drivers/ch340g/</loc>
@@ -13,6 +13,9 @@
   </url><url>
     <loc>https://lmtreser.github.io/boards/Cores/esp8266/</loc>
     <lastmod>2024-02-24T10:49:30-03:00</lastmod>
+  </url><url>
+    <loc>https://lmtreser.github.io/boards/Bibliotecas/bibliotecas/</loc>
+    <lastmod>2024-02-24T10:49:34-03:00</lastmod>
   </url><url>
     <loc>https://lmtreser.github.io/boards/Drivers/cp210x/</loc>
     <lastmod>2024-02-24T10:49:34-03:00</lastmod>

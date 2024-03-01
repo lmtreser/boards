@@ -9,11 +9,18 @@
     <lastBuildDate>Sat, 24 Feb 2024 10:49:34 -0300</lastBuildDate>
     <atom:link href="https://lmtreser.github.io/boards/Bibliotecas/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Instalación de Bibliotecas</title>
+      <link>https://lmtreser.github.io/boards/Bibliotecas/instalar_libs/</link>
+      <pubDate>Sat, 24 Feb 2024 10:49:34 -0300</pubDate>
+      <guid>https://lmtreser.github.io/boards/Bibliotecas/instalar_libs/</guid>
+      <description>Instalar una biblioteca es un proceso rápido y fácil, en este tutorial repasaremos las formas de hacerlo.&#xA;Instalación desde Arduino IDE Instalación Manual Recursos Instalación desde Arduino IDE Esta documentación es una traducción parcial de la documentación oficial de Arduino, disponible en GitHub. La versión del IDE es la 2, aunque el proceso es similar en versiones anteriores.&#xA;El primer paso es abrir Arduino IDE v2. Con el editor abierto, hay que hacer clic en el icono Biblioteca que se encuentra en la columna izquierda para acceder al GESTOR DE BIBLIOTECAS.</description>
+    </item>
+    <item>
       <title>Bibliotecas Útiles</title>
       <link>https://lmtreser.github.io/boards/Bibliotecas/bibliotecas/</link>
       <pubDate>Sat, 24 Feb 2024 10:49:34 -0300</pubDate>
       <guid>https://lmtreser.github.io/boards/Bibliotecas/bibliotecas/</guid>
-      <description>Listado de bibliotecas útiles.&#xA;Biblioteca Autor Plataforma Descripción DHT sensor library Adafruit AVR Sensores de temperatura y humedad DHT11, DHT22, etc. 🔗 DallasTemperature Miles Burton AVR Sensores de temperatura de Maxim (DS18B20, DS18S20, DS1822, DS1820, MAX31820, MAX31850) 🔗 </description>
+      <description>Listado de bibliotecas útiles.&#xA;Biblioteca Autor Plataforma Descripción DallasTemperature Miles Burton AVR Sensores de temperatura de Maxim (DS18B20, DS18S20, DS1822, DS1820, MAX31820, MAX31850) 🔗 DHT sensor library Adafruit AVR Sensores de temperatura y humedad DHT11, DHT22, etc. 🔗 Robotec Lucas Martín Treser AVR Biblioteca &amp;ldquo;oficial&amp;rdquo; de la competencia de robótica Robotec. 🔗 </description>
     </item>
   </channel>
 </rss>
