@@ -45,6 +45,7 @@ Repositorio con información técnica acerca de placas programables.
     - [CP210x USB to UART Bridge VCP Drivers](https://www.silabs.com/developers/usb-to-uart-bridge-vcp-drivers)
     - [How to Install CH340 Drivers](https://learn.sparkfun.com/tutorials/how-to-install-ch340-drivers/all)
     - [La familia de chips CH340G](https://www.prometec.net/ch340g/)
+    - [Prolific Technology Inc. PL2303](https://www.prolific.com.tw/US/index.aspx)
     - [WCH CH340 Drivers](https://www.wch-ic.com/downloads/CH341SER_ZIP.html)
 
 - **TechInfo**
