@@ -37,11 +37,11 @@
       <description>En este tutorial veremos cómo configurar el IDE de Arduino para poder programar placas basadas en el SoC ESP8266, como por ejemplo NodeMCU y Wemos.&#xA;Especificaciones Instalación del Espressif ESP8266 Arduino Core Placas soportadas Recursos El ESP8266 es un chip de bajo costo fabricado por Espressif Systems, que incluye un procesador junto a conectividad Wi-Fi con un stack TCP/IP completo. El primer chip se hace conocido en los mercados alrededor de agosto de 2014 con el módulo ESP-01, desarrollado por la empresa AI-Thinker.</description>
     </item>
     <item>
-      <title>El Preprocesador</title>
+      <title>El Preprocesador de C</title>
       <link>https://lmtreser.github.io/boards/Arduino-Under-The-Hood/preprocessador/</link>
       <pubDate>Thu, 06 Jun 2024 08:00:00 -0300</pubDate>
       <guid>https://lmtreser.github.io/boards/Arduino-Under-The-Hood/preprocessador/</guid>
-      <description>El GNU Compiler Collection (colección de compiladores GNU) es un conjunto de compiladores creados por el proyecto GNU. GCC es software libre y lo distribuye la Free Software Foundation (FSF) bajo la licencia general pública GPL.&#xA;Manuales Recursos Estos compiladores se consideran estándar para los sistemas operativos derivados de UNIX, de código abierto y también de propietarios, como Mac OS X. GCC requiere el conjunto de aplicaciones conocido como binutils para realizar tareas como identificar archivos objeto u obtener su tamaño para copiarlos, traducirlos o crear listas, enlazarlos, o quitarles símbolos innecesarios.</description>
+      <description>El preprocesador de C es el preprocesador para el lenguaje de programación C. Es el primer programa invocado por el compilador y procesa directivas como #include, #define e #if. Estas directivas no son específicas de C. En realidad pueden ser usadas con cualquier tipo de archivo.&#xA;Fases Instrucciones Básicas del Preprocesador Inclusión de Archivos Definición de Macros Eliminación de Definiciones Control Condicional de Compilación Macros Predefinidas Directivas de Línea Otros Ejemplos Manuales Recursos Fases El preprocesador utiliza 4 etapas denominadas Fases de traducción.</description>
     </item>
     <item>
       <title>Bibliotecas Útiles</title>
