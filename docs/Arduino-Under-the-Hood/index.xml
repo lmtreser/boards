@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Arduino Under the Hood on Boards</title>
+    <link>https://lmtreser.github.io/boards/Arduino-Under-the-Hood/</link>
+    <description>Recent content in Arduino Under the Hood on Boards</description>
+    <generator>Hugo</generator>
+    <language>es</language>
+    <lastBuildDate></lastBuildDate>
+    <atom:link href="https://lmtreser.github.io/boards/Arduino-Under-the-Hood/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>
