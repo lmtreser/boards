@@ -13,7 +13,7 @@
 
 
   <meta name="description" content="El preprocesador de C es el preprocesador para el lenguaje de programación C. Es el primer programa invocado por el compilador y procesa directivas como #include, #define e #if. Estas directivas no son específicas de C. En realidad pueden ser usadas con cualquier tipo de archivo.
-Fases Instrucciones Básicas del Preprocesador Inclusión de Archivos Definición de Macros Eliminación de Definiciones Control Condicional de Compilación Macros Predefinidas Directivas de Línea Otros Ejemplos Manuales Recursos Fases El preprocesador utiliza 4 etapas denominadas Fases de traducción." />
+Fases Instrucciones Básicas del Preprocesador Pragmas Ejemplos Ejemplos Arduino Manuales Recursos Fases El preprocesador utiliza 4 etapas denominadas Fases de traducción. Aunque alguna implementación puede elegir hacer alguna o todas las fases simultáneamente, debe comportarse como si fuesen ejecutadas paso a paso." />
 
     <title>El Preprocesador de C | Boards</title>
 
@@ -40,7 +40,7 @@ Fases Instrucciones Básicas del Preprocesador Inclusión de Archivos Definició
   />
   <meta property="og:site_name" content="Boards" />
   <meta property="og:description" content="El preprocesador de C es el preprocesador para el lenguaje de programación C. Es el primer programa invocado por el compilador y procesa directivas como #include, #define e #if. Estas directivas no son específicas de C. En realidad pueden ser usadas con cualquier tipo de archivo.
-Fases Instrucciones Básicas del Preprocesador Inclusión de Archivos Definición de Macros Eliminación de Definiciones Control Condicional de Compilación Macros Predefinidas Directivas de Línea Otros Ejemplos Manuales Recursos Fases El preprocesador utiliza 4 etapas denominadas Fases de traducción." />
+Fases Instrucciones Básicas del Preprocesador Pragmas Ejemplos Ejemplos Arduino Manuales Recursos Fases El preprocesador utiliza 4 etapas denominadas Fases de traducción. Aunque alguna implementación puede elegir hacer alguna o todas las fases simultáneamente, debe comportarse como si fuesen ejecutadas paso a paso." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://lmtreser.github.io/boards/Arduino-Under-The-Hood/preprocessador/" />
 
@@ -58,7 +58,7 @@ Fases Instrucciones Básicas del Preprocesador Inclusión de Archivos Definició
   <meta name="twitter:card" content="summary" />
 <meta name="twitter:title" content="El Preprocesador de C" />
   <meta name="twitter:description" content="El preprocesador de C es el preprocesador para el lenguaje de programación C. Es el primer programa invocado por el compilador y procesa directivas como #include, #define e #if. Estas directivas no son específicas de C. En realidad pueden ser usadas con cualquier tipo de archivo.
-Fases Instrucciones Básicas del Preprocesador Inclusión de Archivos Definición de Macros Eliminación de Definiciones Control Condicional de Compilación Macros Predefinidas Directivas de Línea Otros Ejemplos Manuales Recursos Fases El preprocesador utiliza 4 etapas denominadas Fases de traducción." />
+Fases Instrucciones Básicas del Preprocesador Pragmas Ejemplos Ejemplos Arduino Manuales Recursos Fases El preprocesador utiliza 4 etapas denominadas Fases de traducción. Aunque alguna implementación puede elegir hacer alguna o todas las fases simultáneamente, debe comportarse como si fuesen ejecutadas paso a paso." />
 
 
   <script type="application/ld+json">
@@ -69,8 +69,8 @@ Fases Instrucciones Básicas del Preprocesador Inclusión de Archivos Definició
       "name": "El Preprocesador de C",
       "url" : "https://lmtreser.github.io/boards/Arduino-Under-The-Hood/preprocessador/",
       "headline": "El Preprocesador de C",
-      "description": "El preprocesador de C es el preprocesador para el lenguaje de programación C. Es el primer programa invocado por el compilador y procesa directivas como #include, #define e #if. Estas directivas no son específicas de C. En realidad pueden ser usadas con cualquier tipo de archivo.\nFases Instrucciones Básicas del Preprocesador Inclusión de Archivos Definición de Macros Eliminación de Definiciones Control Condicional de Compilación Macros Predefinidas Directivas de Línea Otros Ejemplos Manuales Recursos Fases El preprocesador utiliza 4 etapas denominadas Fases de traducción.",
-      "wordCount" : "532",
+      "description": "El preprocesador de C es el preprocesador para el lenguaje de programación C. Es el primer programa invocado por el compilador y procesa directivas como #include, #define e #if. Estas directivas no son específicas de C. En realidad pueden ser usadas con cualquier tipo de archivo.\nFases Instrucciones Básicas del Preprocesador Pragmas Ejemplos Ejemplos Arduino Manuales Recursos Fases El preprocesador utiliza 4 etapas denominadas Fases de traducción. Aunque alguna implementación puede elegir hacer alguna o todas las fases simultáneamente, debe comportarse como si fuesen ejecutadas paso a paso.",
+      "wordCount" : "717",
       "inLanguage": "es",
       "isFamilyFriendly": "true",
       "mainEntityOfPage": {
@@ -1229,18 +1229,10 @@ Fases Instrucciones Básicas del Preprocesador Inclusión de Archivos Definició
 <div class="gdoc-toc gdoc-toc__level--3">
       <nav id="TableOfContents"><ul>
         <li><a href="#fases">Fases</a></li>
-        <li><a href="#instrucciones-básicas-del-preprocesador">Instrucciones Básicas del Preprocesador</a>
-          <ul>
-            <li><a href="#inclusión-de-archivos">Inclusión de Archivos</a></li>
-            <li><a href="#definición-de-macros">Definición de Macros</a></li>
-            <li><a href="#eliminación-de-definiciones">Eliminación de Definiciones</a></li>
-            <li><a href="#control-condicional-de-compilación">Control Condicional de Compilación</a></li>
-            <li><a href="#macros-predefinidas">Macros Predefinidas</a></li>
-            <li><a href="#directivas-de-línea">Directivas de Línea</a></li>
-            <li><a href="#otros">Otros</a></li>
-          </ul>
-        </li>
+        <li><a href="#instrucciones-básicas-del-preprocesador">Instrucciones Básicas del Preprocesador</a></li>
+        <li><a href="#pragmas">Pragmas</a></li>
         <li><a href="#ejemplos">Ejemplos</a></li>
+        <li><a href="#ejemplos-arduino">Ejemplos Arduino</a></li>
         <li><a href="#manuales">Manuales</a></li>
         <li><a href="#recursos">Recursos</a></li>
       </ul></nav>
@@ -1279,53 +1271,21 @@ Fases Instrucciones Básicas del Preprocesador Inclusión de Archivos Definició
         <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
     </a>
 </div>
-<div class="flex align-center gdoc-page__anchorwrap">
-    <h3 id="inclusión-de-archivos"
-    >
-        Inclusión de Archivos
-    </h3>
-    <a data-clipboard-text="https://lmtreser.github.io/boards/Arduino-Under-The-Hood/preprocessador/#inclusión-de-archivos" class="gdoc-page__anchor clip flex align-center" title="Anclado a: Inclusión de Archivos" aria-label="Anclado a: Inclusión de Archivos" href="#inclusi%c3%b3n-de-archivos">
-        <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
-    </a>
-</div>
+<p>Inclusión de archivos:</p>
 <ul>
 <li><code>#include &lt;file&gt;</code>: Incluye un archivo de cabecera estándar.</li>
 <li><code>#include &quot;file&quot;</code>: Incluye un archivo de cabecera del proyecto.</li>
 </ul>
-<div class="flex align-center gdoc-page__anchorwrap">
-    <h3 id="definición-de-macros"
-    >
-        Definición de Macros
-    </h3>
-    <a data-clipboard-text="https://lmtreser.github.io/boards/Arduino-Under-The-Hood/preprocessador/#definición-de-macros" class="gdoc-page__anchor clip flex align-center" title="Anclado a: Definición de Macros" aria-label="Anclado a: Definición de Macros" href="#definici%c3%b3n-de-macros">
-        <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
-    </a>
-</div>
+<p>Definición de macros:</p>
 <ul>
 <li><code>#define NAME value</code>: Define una macro.</li>
 <li><code>#define NAME(args) code</code>: Define una macro con argumentos.</li>
 </ul>
-<div class="flex align-center gdoc-page__anchorwrap">
-    <h3 id="eliminación-de-definiciones"
-    >
-        Eliminación de Definiciones
-    </h3>
-    <a data-clipboard-text="https://lmtreser.github.io/boards/Arduino-Under-The-Hood/preprocessador/#eliminación-de-definiciones" class="gdoc-page__anchor clip flex align-center" title="Anclado a: Eliminación de Definiciones" aria-label="Anclado a: Eliminación de Definiciones" href="#eliminaci%c3%b3n-de-definiciones">
-        <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
-    </a>
-</div>
+<p>Eliminación de definiciones:</p>
 <ul>
 <li><code>#undef NAME</code>: Elimina la definición de una macro.</li>
 </ul>
-<div class="flex align-center gdoc-page__anchorwrap">
-    <h3 id="control-condicional-de-compilación"
-    >
-        Control Condicional de Compilación
-    </h3>
-    <a data-clipboard-text="https://lmtreser.github.io/boards/Arduino-Under-The-Hood/preprocessador/#control-condicional-de-compilación" class="gdoc-page__anchor clip flex align-center" title="Anclado a: Control Condicional de Compilación" aria-label="Anclado a: Control Condicional de Compilación" href="#control-condicional-de-compilaci%c3%b3n">
-        <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
-    </a>
-</div>
+<p>Control condicional de compilación:</p>
 <ul>
 <li><code>#ifdef NAME</code>: Compila el código si la macro NAME está definida.</li>
 <li><code>#ifndef NAME</code>: Compila el código si la macro NAME no está definida.</li>
@@ -1334,15 +1294,7 @@ Fases Instrucciones Básicas del Preprocesador Inclusión de Archivos Definició
 <li><code>#else</code>: Compila el código si ninguna de las condiciones anteriores se cumple.</li>
 <li><code>#endif</code>: Finaliza una estructura condicional.</li>
 </ul>
-<div class="flex align-center gdoc-page__anchorwrap">
-    <h3 id="macros-predefinidas"
-    >
-        Macros Predefinidas
-    </h3>
-    <a data-clipboard-text="https://lmtreser.github.io/boards/Arduino-Under-The-Hood/preprocessador/#macros-predefinidas" class="gdoc-page__anchor clip flex align-center" title="Anclado a: Macros Predefinidas" aria-label="Anclado a: Macros Predefinidas" href="#macros-predefinidas">
-        <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
-    </a>
-</div>
+<p>Macros predefinidas:</p>
 <ul>
 <li><code>__DATE__</code>: Fecha de compilación (en formato &ldquo;MMM DD YYYY&rdquo;).</li>
 <li><code>__TIME__</code>: Hora de compilación (en formato &ldquo;HH:MM:SS&rdquo;).</li>
@@ -1351,33 +1303,32 @@ Fases Instrucciones Básicas del Preprocesador Inclusión de Archivos Definició
 <li><code>__func__</code>: Nombre de la función actual (C99 y C++11 en adelante).</li>
 <li><code>__cplusplus</code>: Definido cuando el código se compila como C++.</li>
 </ul>
-<div class="flex align-center gdoc-page__anchorwrap">
-    <h3 id="directivas-de-línea"
-    >
-        Directivas de Línea
-    </h3>
-    <a data-clipboard-text="https://lmtreser.github.io/boards/Arduino-Under-The-Hood/preprocessador/#directivas-de-línea" class="gdoc-page__anchor clip flex align-center" title="Anclado a: Directivas de Línea" aria-label="Anclado a: Directivas de Línea" href="#directivas-de-l%c3%adnea">
-        <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
-    </a>
-</div>
+<p>Directivas de línea:</p>
 <ul>
 <li><code>#line number</code>: Cambia el número de línea del código.</li>
 <li><code>#line number &quot;filename&quot;</code>: Cambia el número de línea y el nombre del archivo.</li>
 </ul>
-<div class="flex align-center gdoc-page__anchorwrap">
-    <h3 id="otros"
-    >
-        Otros
-    </h3>
-    <a data-clipboard-text="https://lmtreser.github.io/boards/Arduino-Under-The-Hood/preprocessador/#otros" class="gdoc-page__anchor clip flex align-center" title="Anclado a: Otros" aria-label="Anclado a: Otros" href="#otros">
-        <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
-    </a>
-</div>
+<p>Otros:</p>
 <ul>
 <li><code>#error message</code>: Genera un mensaje de error durante la compilación.</li>
 <li><code>#pragma directive</code>: Emite directivas específicas del compilador.</li>
 </ul>
 <div class="flex align-center gdoc-page__anchorwrap">
+    <h2 id="pragmas"
+    >
+        Pragmas
+    </h2>
+    <a data-clipboard-text="https://lmtreser.github.io/boards/Arduino-Under-The-Hood/preprocessador/#pragmas" class="gdoc-page__anchor clip flex align-center" title="Anclado a: Pragmas" aria-label="Anclado a: Pragmas" href="#pragmas">
+        <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
+    </a>
+</div>
+<p>Los <strong>pragmas</strong> son directivas especiales que controlan el comportamiento del compilador. Tienen esta forma estándar:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="line"><span class="cl"><span class="n">pragma</span> <span class="nf">Nombre</span> <span class="p">(</span><span class="n">lista_de_argumentos</span><span class="p">);</span>
+</span></span></code></pre></div><p><code>#pragma</code> es una directiva que se utiliza en C y C++ para ofrecer información adicional al compilador, más allá de lo que está disponible en el lenguaje estándar. Los pragmas son específicos del compilador. Es decir, un pragma diseñado para un compilador puede no funcionar en otro. El uso de #pragma puede hacer que el código sea menos portátil, ya que los pragmas son específicos del compilador.</p>
+<p>Por ejemplo, <em>pragma once</em> se utiliza para asegurar que un archivo de encabezado se incluya una sola vez durante la compilación. Esto ayuda a prevenir la duplicación de definiciones.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="line"><span class="cl"><span class="cp">#pragma once
+</span></span></span><span class="line"><span class="cl"><span class="cp"></span><span class="c1">// Código de encabezado aquí
+</span></span></span></code></pre></div><div class="flex align-center gdoc-page__anchorwrap">
     <h2 id="ejemplos"
     >
         Ejemplos
@@ -1415,6 +1366,39 @@ Fases Instrucciones Básicas del Preprocesador Inclusión de Archivos Definició
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="line"><span class="cl"><span class="cp">#error &#34;Este es un error de prueba&#34;
 </span></span></span><span class="line"><span class="cl"><span class="cp"></span>
 </span></span><span class="line"><span class="cl"><span class="cp">#pragma once </span><span class="c1">// Previene inclusiones múltiples en algunos compiladores
+</span></span></span></code></pre></div><div class="flex align-center gdoc-page__anchorwrap">
+    <h2 id="ejemplos-arduino"
+    >
+        Ejemplos Arduino
+    </h2>
+    <a data-clipboard-text="https://lmtreser.github.io/boards/Arduino-Under-The-Hood/preprocessador/#ejemplos-arduino" class="gdoc-page__anchor clip flex align-center" title="Anclado a: Ejemplos Arduino" aria-label="Anclado a: Ejemplos Arduino" href="#ejemplos-arduino">
+        <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
+    </a>
+</div>
+<p>Incluir una biblioteca u otra dependiendo del hardware a compilar:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="line"><span class="cl"><span class="cp">#ifndef ESPWEBCFG_H
+</span></span></span><span class="line"><span class="cl"><span class="cp">#define ESPWEBCFG_H
+</span></span></span><span class="line"><span class="cl"><span class="cp"></span>
+</span></span><span class="line"><span class="cl"><span class="cp">#ifdef ESP8266
+</span></span></span><span class="line"><span class="cl"><span class="cp"></span>    <span class="cp">#include</span> <span class="cpf">&lt;ESP8266WebServer.h&gt;</span><span class="cp">
+</span></span></span><span class="line"><span class="cl"><span class="cp"></span>    <span class="cp">#include</span> <span class="cpf">&lt;ESP8266WiFi.h&gt;</span><span class="cp">
+</span></span></span><span class="line"><span class="cl"><span class="cp">#elif defined(ESP32)
+</span></span></span><span class="line"><span class="cl"><span class="cp"></span>    <span class="cp">#include</span> <span class="cpf">&lt;WiFi.h&gt;</span><span class="cp">
+</span></span></span><span class="line"><span class="cl"><span class="cp"></span>    <span class="cp">#include</span> <span class="cpf">&lt;WebServer.h&gt;</span><span class="cp">
+</span></span></span><span class="line"><span class="cl"><span class="cp">#endif
+</span></span></span></code></pre></div><p>Añadir instrucciones específicas para un modelo de placa u otro:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="line"><span class="cl"><span class="cp">#if defined(ARDUINO_AVR_UNO)
+</span></span></span><span class="line"><span class="cl"><span class="cp"></span>  <span class="c1">// Código específico para Arduino Uno
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>  <span class="nf">pinMode</span><span class="p">(</span><span class="mi">13</span><span class="p">,</span> <span class="n">OUTPUT</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="cp">#elif defined(ARDUINO_AVR_MEGA2560)
+</span></span></span><span class="line"><span class="cl"><span class="cp"></span>  <span class="c1">// Código específico para Arduino Mega
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>  <span class="nf">pinMode</span><span class="p">(</span><span class="mi">53</span><span class="p">,</span> <span class="n">OUTPUT</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="cp">#endif
+</span></span></span></code></pre></div><p>Si existe la definición, añadir instrucciones específicas:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="line"><span class="cl"><span class="cp">#define ENABLE_DEBUG 1  </span><span class="c1">// DEBUG por Serial, 1=activado
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="cp">#if ENABLE_DEBUG
+</span></span></span><span class="line"><span class="cl"><span class="cp"></span>  <span class="n">Serial</span><span class="p">.</span><span class="nf">println</span><span class="p">(</span><span class="s">&#34;Mensaje&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="cp">#endif
 </span></span></span></code></pre></div><div class="flex align-center gdoc-page__anchorwrap">
     <h2 id="manuales"
     >

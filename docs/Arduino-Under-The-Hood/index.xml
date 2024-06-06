@@ -13,14 +13,14 @@
       <link>https://lmtreser.github.io/boards/Arduino-Under-The-Hood/gcc/</link>
       <pubDate>Thu, 06 Jun 2024 08:00:00 -0300</pubDate>
       <guid>https://lmtreser.github.io/boards/Arduino-Under-The-Hood/gcc/</guid>
-      <description>El GNU Compiler Collection (colección de compiladores GNU) es un conjunto de compiladores creados por el proyecto GNU. GCC es software libre y lo distribuye la Free Software Foundation (FSF) bajo la licencia general pública GPL.&#xA;Manuales Recursos Estos compiladores se consideran estándar para los sistemas operativos derivados de UNIX, de código abierto y también de propietarios, como Mac OS X. GCC requiere el conjunto de aplicaciones conocido como binutils para realizar tareas como identificar archivos objeto u obtener su tamaño para copiarlos, traducirlos o crear listas, enlazarlos, o quitarles símbolos innecesarios.</description>
+      <description>El GNU Compiler Collection (colección de compiladores GNU) es un conjunto de compiladores creados por el proyecto GNU. GCC es software libre y lo distribuye la Free Software Foundation (FSF) bajo la licencia general pública GPL.&#xA;Proceso de compilación de GCC El proceso de compilación un programa Arduino Manuales Recursos Estos compiladores se consideran estándar para los sistemas operativos derivados de UNIX, de código abierto y también de propietarios, como Mac OS X.</description>
     </item>
     <item>
       <title>El Preprocesador de C</title>
       <link>https://lmtreser.github.io/boards/Arduino-Under-The-Hood/preprocessador/</link>
       <pubDate>Thu, 06 Jun 2024 08:00:00 -0300</pubDate>
       <guid>https://lmtreser.github.io/boards/Arduino-Under-The-Hood/preprocessador/</guid>
-      <description>El preprocesador de C es el preprocesador para el lenguaje de programación C. Es el primer programa invocado por el compilador y procesa directivas como #include, #define e #if. Estas directivas no son específicas de C. En realidad pueden ser usadas con cualquier tipo de archivo.&#xA;Fases Instrucciones Básicas del Preprocesador Inclusión de Archivos Definición de Macros Eliminación de Definiciones Control Condicional de Compilación Macros Predefinidas Directivas de Línea Otros Ejemplos Manuales Recursos Fases El preprocesador utiliza 4 etapas denominadas Fases de traducción.</description>
+      <description>El preprocesador de C es el preprocesador para el lenguaje de programación C. Es el primer programa invocado por el compilador y procesa directivas como #include, #define e #if. Estas directivas no son específicas de C. En realidad pueden ser usadas con cualquier tipo de archivo.&#xA;Fases Instrucciones Básicas del Preprocesador Pragmas Ejemplos Ejemplos Arduino Manuales Recursos Fases El preprocesador utiliza 4 etapas denominadas Fases de traducción. Aunque alguna implementación puede elegir hacer alguna o todas las fases simultáneamente, debe comportarse como si fuesen ejecutadas paso a paso.</description>
     </item>
     <item>
       <title>Depuración</title>
@@ -34,7 +34,7 @@
       <link>https://lmtreser.github.io/boards/Arduino-Under-The-Hood/construir/</link>
       <pubDate>Thu, 06 Jun 2024 08:00:00 -0300</pubDate>
       <guid>https://lmtreser.github.io/boards/Arduino-Under-The-Hood/construir/</guid>
-      <description>Muchas veces iniciamos un proyecto experimentando y probando cosas con nuestra placa Arduino y una protoboard. Luego las cosas se ponen un poco más serias y es necesario dar un paso más, por ejemplo fabricando un circuito impreso o shield para contener todos los componentes adicionales al Arduino. En este artículo veremos como construir un Arduino Uno a medida, es decir, bajo nuestros requerimientos.&#xA;El prototipo estará formado por el microcontrolador, la fuente de alimentación, un teclado de entrada de datos y una interfaz para el control de dos motores paso a paso.</description>
+      <description>Muchas veces iniciamos un proyecto experimentando y probando cosas con nuestra placa Arduino y una protoboard. Luego las cosas se ponen un poco más serias y es necesario dar un paso más, por ejemplo fabricando un circuito impreso o shield para contener todos los componentes adicionales al Arduino. En este artículo veremos como construir un Arduino Uno a medida, es decir, bajo nuestros requerimientos.&#xA;Arduino Breadboard Fuente de alimentación Cargando el bootloader Problemas al cargar el bootloader Conexión USB-TTL Manuales Recursos Arduino Breadboard Investigando en Internet bajo los términos Arduino Breadboard o Arduino Standalone encontraremos muchos proyectos para montar una placa Arduino.</description>
     </item>
   </channel>
 </rss>

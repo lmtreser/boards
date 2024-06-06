@@ -13,7 +13,7 @@
 
 
   <meta name="description" content="Muchas veces iniciamos un proyecto experimentando y probando cosas con nuestra placa Arduino y una protoboard. Luego las cosas se ponen un poco más serias y es necesario dar un paso más, por ejemplo fabricando un circuito impreso o shield para contener todos los componentes adicionales al Arduino. En este artículo veremos como construir un Arduino Uno a medida, es decir, bajo nuestros requerimientos.
-El prototipo estará formado por el microcontrolador, la fuente de alimentación, un teclado de entrada de datos y una interfaz para el control de dos motores paso a paso." />
+Arduino Breadboard Fuente de alimentación Cargando el bootloader Problemas al cargar el bootloader Conexión USB-TTL Manuales Recursos Arduino Breadboard Investigando en Internet bajo los términos Arduino Breadboard o Arduino Standalone encontraremos muchos proyectos para montar una placa Arduino." />
 
     <title>Construir un Arduino | Boards</title>
 
@@ -40,7 +40,7 @@ El prototipo estará formado por el microcontrolador, la fuente de alimentación
   />
   <meta property="og:site_name" content="Boards" />
   <meta property="og:description" content="Muchas veces iniciamos un proyecto experimentando y probando cosas con nuestra placa Arduino y una protoboard. Luego las cosas se ponen un poco más serias y es necesario dar un paso más, por ejemplo fabricando un circuito impreso o shield para contener todos los componentes adicionales al Arduino. En este artículo veremos como construir un Arduino Uno a medida, es decir, bajo nuestros requerimientos.
-El prototipo estará formado por el microcontrolador, la fuente de alimentación, un teclado de entrada de datos y una interfaz para el control de dos motores paso a paso." />
+Arduino Breadboard Fuente de alimentación Cargando el bootloader Problemas al cargar el bootloader Conexión USB-TTL Manuales Recursos Arduino Breadboard Investigando en Internet bajo los términos Arduino Breadboard o Arduino Standalone encontraremos muchos proyectos para montar una placa Arduino." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://lmtreser.github.io/boards/Arduino-Under-The-Hood/construir/" />
 
@@ -58,7 +58,7 @@ El prototipo estará formado por el microcontrolador, la fuente de alimentación
   <meta name="twitter:card" content="summary" />
 <meta name="twitter:title" content="Construir un Arduino" />
   <meta name="twitter:description" content="Muchas veces iniciamos un proyecto experimentando y probando cosas con nuestra placa Arduino y una protoboard. Luego las cosas se ponen un poco más serias y es necesario dar un paso más, por ejemplo fabricando un circuito impreso o shield para contener todos los componentes adicionales al Arduino. En este artículo veremos como construir un Arduino Uno a medida, es decir, bajo nuestros requerimientos.
-El prototipo estará formado por el microcontrolador, la fuente de alimentación, un teclado de entrada de datos y una interfaz para el control de dos motores paso a paso." />
+Arduino Breadboard Fuente de alimentación Cargando el bootloader Problemas al cargar el bootloader Conexión USB-TTL Manuales Recursos Arduino Breadboard Investigando en Internet bajo los términos Arduino Breadboard o Arduino Standalone encontraremos muchos proyectos para montar una placa Arduino." />
 
 
   <script type="application/ld+json">
@@ -69,8 +69,8 @@ El prototipo estará formado por el microcontrolador, la fuente de alimentación
       "name": "Construir un Arduino",
       "url" : "https://lmtreser.github.io/boards/Arduino-Under-The-Hood/construir/",
       "headline": "Construir un Arduino",
-      "description": "Muchas veces iniciamos un proyecto experimentando y probando cosas con nuestra placa Arduino y una protoboard. Luego las cosas se ponen un poco más serias y es necesario dar un paso más, por ejemplo fabricando un circuito impreso o shield para contener todos los componentes adicionales al Arduino. En este artículo veremos como construir un Arduino Uno a medida, es decir, bajo nuestros requerimientos.\nEl prototipo estará formado por el microcontrolador, la fuente de alimentación, un teclado de entrada de datos y una interfaz para el control de dos motores paso a paso.",
-      "wordCount" : "597",
+      "description": "Muchas veces iniciamos un proyecto experimentando y probando cosas con nuestra placa Arduino y una protoboard. Luego las cosas se ponen un poco más serias y es necesario dar un paso más, por ejemplo fabricando un circuito impreso o shield para contener todos los componentes adicionales al Arduino. En este artículo veremos como construir un Arduino Uno a medida, es decir, bajo nuestros requerimientos.\nArduino Breadboard Fuente de alimentación Cargando el bootloader Problemas al cargar el bootloader Conexión USB-TTL Manuales Recursos Arduino Breadboard Investigando en Internet bajo los términos Arduino Breadboard o Arduino Standalone encontraremos muchos proyectos para montar una placa Arduino.",
+      "wordCount" : "562",
       "inLanguage": "es",
       "isFamilyFriendly": "true",
       "mainEntityOfPage": {
@@ -1225,8 +1225,7 @@ El prototipo estará formado por el microcontrolador, la fuente de alimentación
     class="gdoc-markdown gdoc-markdown__align--left"
   >
     <h1>Construir un Arduino</h1>
-    <p>Muchas veces iniciamos un proyecto experimentando y probando cosas con nuestra placa Arduino y una protoboard. Luego las cosas se ponen un poco más serias y es necesario dar un paso más, por ejemplo fabricando un circuito impreso o shield para contener todos los componentes adicionales al Arduino. En este artículo veremos como construir un Arduino Uno a medida, es decir, bajo nuestros requerimientos.</p>
-<p>El prototipo estará formado por el microcontrolador, la fuente de alimentación, un teclado de entrada de datos y una interfaz para el control de dos motores paso a paso.</p>
+    <p>Muchas veces iniciamos un proyecto experimentando y probando cosas con nuestra placa Arduino y una protoboard. Luego las cosas se ponen un poco más serias y es necesario dar un paso más, por ejemplo fabricando un circuito impreso o <em>shield</em> para contener todos los componentes adicionales al Arduino. En este artículo veremos como construir un Arduino Uno a medida, es decir, bajo nuestros requerimientos.</p>
 <div class="gdoc-toc gdoc-toc__level--3">
       <nav id="TableOfContents"><ul>
         <li><a href="#arduino-breadboard">Arduino Breadboard</a></li>
@@ -1254,7 +1253,7 @@ El prototipo estará formado por el microcontrolador, la fuente de alimentación
 >Arduino Breadboard</a> o <a
   class="gdoc-markdown__link"
   href="https://docs.arduino.cc/retired/hacking/hardware/building-an-arduino-on-a-breadboard/"
->Arduino Standalone</a> encontraremos muchos proyectos para montar nuestra propia Arduino. El circuito mínimo se basa en un microcontrolador <strong>ATMEGA328-PU</strong>, un cristal de 16MHz, dos capacitores cerámicos y una resistencia.</p>
+>Arduino Standalone</a> encontraremos muchos proyectos para montar una placa Arduino. El circuito mínimo se basa en un microcontrolador <strong>ATMEGA328-PU</strong>, un cristal de 16MHz, dos capacitores cerámicos y una resistencia.</p>
 <p align="center">
     <img src="../img/arduinocustom.png">
 </p>
@@ -1267,11 +1266,14 @@ El prototipo estará formado por el microcontrolador, la fuente de alimentación
         <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
     </a>
 </div>
-<p>Nuestra placa Arduino a medida funciona con 5 V de corriente continua, por lo que será necesario contar con un regulador de tensión para poder alimentarla desde una batería de 9V o una fuente. Estoy utilizando el regulador lineal LM7805 junto a algunos componentes más:</p>
+<p>La placa Arduino a medida funciona con 5 V de corriente continua, por lo que será necesario contar con un regulador de tensión para poder alimentarla desde una batería de 9 V o una fuente. Este montaje utiliza el <a
+  class="gdoc-markdown__link"
+  href="../pdf/LM7805.pdf"
+>regulador lineal LM7805</a> junto a algunos componentes más:</p>
 <p align="center">
     <img src="../img/Regulador.png">
 </p>
-<p>Una vez realizadas todas las conexiones de nuestra fuente de alimentación es importante comprobar que no existan cortocircuitos o problemas de soldadura. Hay que probar con un multímetro que la polaridad y la tensión sean correctas antes de conectar el microcontrolador.</p>
+<p>Una vez realizadas todas las conexiones de la fuente de alimentación es importante comprobar que no existan cortocircuitos o problemas de soldadura. Hay que probar con un multímetro que la polaridad y la tensión sean correctas antes de conectar el microcontrolador.</p>
 <div class="flex align-center gdoc-page__anchorwrap">
     <h2 id="cargando-el-bootloader"
     >
@@ -1281,13 +1283,13 @@ El prototipo estará formado por el microcontrolador, la fuente de alimentación
         <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
     </a>
 </div>
-<p>Una vez que nuestro hardware está terminado, es hora de cargar el <strong>bootloader</strong>. Un microcontrolador generalmente se programa a través de un dispositivo programador, a menos que tenga en su memoria un pequeño firmware que permita instalar un nuevo programa sin la necesidad de un programador externo. Esta es la función del bootloader o gestor de arranque.</p>
-<p>Para cargar el bootloader vamos a necesitar una placa Arduino Uno a la que le debemos subir el sketch <strong>ArduinoISP</strong>. Para hacer esto abrimos el sketch desde el menú <strong>Archivo &gt; Ejemplos &gt; 11. ArduinoISP &gt; ArduinoISP</strong>.</p>
-<p>El siguiente paso será conectar la placa Arduino Uno a nuestra placa Arduino «a medida».</p>
+<p>Una vez que el hardware está terminado, es hora de cargar el <strong>bootloader</strong>. Un microcontrolador generalmente se programa a través de un dispositivo programador, a menos que tenga en su memoria un pequeño <em>firmware</em> que permita instalar un nuevo programa sin la necesidad de un programador externo. Esta es la función del bootloader o gestor de arranque.</p>
+<p>Para cargar el bootloader se necesita una placa Arduino Uno a la que se le debe subir el sketch <strong>ArduinoISP</strong>. Para hacer esto, abrir el sketch desde el menú <strong>Archivo &gt; Ejemplos &gt; 11. ArduinoISP &gt; ArduinoISP</strong>.</p>
+<p>El siguiente paso será conectar la placa Arduino Uno a la placa Arduino «a medida».</p>
 <p align="center">
     <img src="../img/004.png">
 </p>
-<p>Ahora es necesario cambiar el programador. Vamos al menú <strong>Herramientas &gt; Programador</strong> y elegimos la opción <strong>Arduino as ISP</strong>. Volvemos al menú <strong>Herramientas</strong> y elegimos la opción <strong>Quemar Bootloader</strong>. ¡Listo! Tenemos nuestra placa Arduino lista para poder trabajar.</p>
+<p>Ahora es necesario cambiar el programador. Ir al menú <strong>Herramientas &gt; Programador</strong> y elegir la opción <strong>Arduino as ISP</strong>. Volver al menú <strong>Herramientas</strong> y elegir la opción <strong>Quemar Bootloader</strong>. ¡Listo!</p>
 <div class="flex align-center gdoc-page__anchorwrap">
     <h2 id="problemas-al-cargar-el-bootloader"
     >
@@ -1301,7 +1303,7 @@ El prototipo estará formado por el microcontrolador, la fuente de alimentación
 <p align="center">
     <img src="../img/error.png">
 </p>
-<p>En este caso ocurrió debido a que el microcontrolador que se está utilizando es el ATMEGA328-PU y el que utiliza la placa Arduino Uno es el <strong>ATMEGA328P-PU</strong>. La gran diferencia entre uno y otro es el consumo de energía. Para poder continuar vamos a engañar al IDE modificando el archivo <strong>avrdude.conf</strong>.</p>
+<p>En este caso ocurrió debido a que el microcontrolador que se está utilizando es el ATMEGA328-PU y el que utiliza la placa Arduino Uno es el <strong>ATMEGA328P-PU</strong>. La gran diferencia entre uno y otro es el consumo de energía. Para poder continuar hay que engañar al IDE modificando el archivo <strong>avrdude.conf</strong>.</p>
 <ul>
 <li>Buscar y abrir la carpeta en la que está instalado Arduino IDE, luego navegar hasta la subcarpeta <code>\hardware\tools\avr\etc</code>.</li>
 <li>Hacer una copia de respaldo del archivo <code>avrdude.conf</code>.</li>
@@ -1324,7 +1326,7 @@ El prototipo estará formado por el microcontrolador, la fuente de alimentación
         <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
     </a>
 </div>
-<p>Para cargar nuestros sketchs deberemos utilizar un adaptador USB-TTL y conectarlo de la siguiente manera:</p>
+<p>Para cargar un sketch deberemos utilizar un adaptador USB-TTL y conectarlo de la siguiente manera:</p>
 <p align="center">
     <img src="../img/005.png">
 </p>

@@ -13,7 +13,7 @@
 
 
   <meta name="description" content="El GNU Compiler Collection (colección de compiladores GNU) es un conjunto de compiladores creados por el proyecto GNU. GCC es software libre y lo distribuye la Free Software Foundation (FSF) bajo la licencia general pública GPL.
-Manuales Recursos Estos compiladores se consideran estándar para los sistemas operativos derivados de UNIX, de código abierto y también de propietarios, como Mac OS X. GCC requiere el conjunto de aplicaciones conocido como binutils para realizar tareas como identificar archivos objeto u obtener su tamaño para copiarlos, traducirlos o crear listas, enlazarlos, o quitarles símbolos innecesarios." />
+Proceso de compilación de GCC El proceso de compilación un programa Arduino Manuales Recursos Estos compiladores se consideran estándar para los sistemas operativos derivados de UNIX, de código abierto y también de propietarios, como Mac OS X." />
 
     <title>GNU Compiler Collection | Boards</title>
 
@@ -40,7 +40,7 @@ Manuales Recursos Estos compiladores se consideran estándar para los sistemas o
   />
   <meta property="og:site_name" content="Boards" />
   <meta property="og:description" content="El GNU Compiler Collection (colección de compiladores GNU) es un conjunto de compiladores creados por el proyecto GNU. GCC es software libre y lo distribuye la Free Software Foundation (FSF) bajo la licencia general pública GPL.
-Manuales Recursos Estos compiladores se consideran estándar para los sistemas operativos derivados de UNIX, de código abierto y también de propietarios, como Mac OS X. GCC requiere el conjunto de aplicaciones conocido como binutils para realizar tareas como identificar archivos objeto u obtener su tamaño para copiarlos, traducirlos o crear listas, enlazarlos, o quitarles símbolos innecesarios." />
+Proceso de compilación de GCC El proceso de compilación un programa Arduino Manuales Recursos Estos compiladores se consideran estándar para los sistemas operativos derivados de UNIX, de código abierto y también de propietarios, como Mac OS X." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://lmtreser.github.io/boards/Arduino-Under-The-Hood/gcc/" />
 
@@ -58,7 +58,7 @@ Manuales Recursos Estos compiladores se consideran estándar para los sistemas o
   <meta name="twitter:card" content="summary" />
 <meta name="twitter:title" content="GNU Compiler Collection" />
   <meta name="twitter:description" content="El GNU Compiler Collection (colección de compiladores GNU) es un conjunto de compiladores creados por el proyecto GNU. GCC es software libre y lo distribuye la Free Software Foundation (FSF) bajo la licencia general pública GPL.
-Manuales Recursos Estos compiladores se consideran estándar para los sistemas operativos derivados de UNIX, de código abierto y también de propietarios, como Mac OS X. GCC requiere el conjunto de aplicaciones conocido como binutils para realizar tareas como identificar archivos objeto u obtener su tamaño para copiarlos, traducirlos o crear listas, enlazarlos, o quitarles símbolos innecesarios." />
+Proceso de compilación de GCC El proceso de compilación un programa Arduino Manuales Recursos Estos compiladores se consideran estándar para los sistemas operativos derivados de UNIX, de código abierto y también de propietarios, como Mac OS X." />
 
 
   <script type="application/ld+json">
@@ -69,8 +69,8 @@ Manuales Recursos Estos compiladores se consideran estándar para los sistemas o
       "name": "GNU Compiler Collection",
       "url" : "https://lmtreser.github.io/boards/Arduino-Under-The-Hood/gcc/",
       "headline": "GNU Compiler Collection",
-      "description": "El GNU Compiler Collection (colección de compiladores GNU) es un conjunto de compiladores creados por el proyecto GNU. GCC es software libre y lo distribuye la Free Software Foundation (FSF) bajo la licencia general pública GPL.\nManuales Recursos Estos compiladores se consideran estándar para los sistemas operativos derivados de UNIX, de código abierto y también de propietarios, como Mac OS X. GCC requiere el conjunto de aplicaciones conocido como binutils para realizar tareas como identificar archivos objeto u obtener su tamaño para copiarlos, traducirlos o crear listas, enlazarlos, o quitarles símbolos innecesarios.",
-      "wordCount" : "141",
+      "description": "El GNU Compiler Collection (colección de compiladores GNU) es un conjunto de compiladores creados por el proyecto GNU. GCC es software libre y lo distribuye la Free Software Foundation (FSF) bajo la licencia general pública GPL.\nProceso de compilación de GCC El proceso de compilación un programa Arduino Manuales Recursos Estos compiladores se consideran estándar para los sistemas operativos derivados de UNIX, de código abierto y también de propietarios, como Mac OS X.",
+      "wordCount" : "507",
       "inLanguage": "es",
       "isFamilyFriendly": "true",
       "mainEntityOfPage": {
@@ -1228,6 +1228,8 @@ Manuales Recursos Estos compiladores se consideran estándar para los sistemas o
     <p>El GNU Compiler Collection (colección de compiladores GNU) es un conjunto de compiladores creados por el proyecto GNU. GCC es software libre y lo distribuye la Free Software Foundation (FSF) bajo la licencia general pública GPL.</p>
 <div class="gdoc-toc gdoc-toc__level--3">
       <nav id="TableOfContents"><ul>
+        <li><a href="#proceso-de-compilación-de-gcc">Proceso de compilación de GCC</a></li>
+        <li><a href="#el-proceso-de-compilación-un-programa-arduino">El proceso de compilación un programa Arduino</a></li>
         <li><a href="#manuales">Manuales</a></li>
         <li><a href="#recursos">Recursos</a></li>
       </ul></nav>
@@ -1238,6 +1240,56 @@ Manuales Recursos Estos compiladores se consideran estándar para los sistemas o
 <p align="center">
     <img src="../img/Gcc-4.2.0.png">
 </p>
+<div class="flex align-center gdoc-page__anchorwrap">
+    <h2 id="proceso-de-compilación-de-gcc"
+    >
+        Proceso de compilación de GCC
+    </h2>
+    <a data-clipboard-text="https://lmtreser.github.io/boards/Arduino-Under-The-Hood/gcc/#proceso-de-compilación-de-gcc" class="gdoc-page__anchor clip flex align-center" title="Anclado a: Proceso de compilación de GCC" aria-label="Anclado a: Proceso de compilación de GCC" href="#proceso-de-compilaci%c3%b3n-de-gcc">
+        <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
+    </a>
+</div>
+<p>GCC compila un programa C/C++ en un ejecutable en 4 pasos como se muestra en el siguiente diagrama.</p>
+<p align="center">
+    <img src="../img/GCC_CompilationProcess.png">
+</p>
+<p>Por ejemplo, un «gcc -o hello.exe hello.c» se realiza de la siguiente manera:</p>
+<p>Preprocesamiento: a través del preprocesador GNU C (<code>cpp.exe</code>), que incluye las cabeceras <code>#include</code> y expande las macros <code>#define</code>. El archivo intermedio resultante <code>hello.i</code> contiene el código fuente expandido.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="line"><span class="cl"><span class="n">cpp</span> <span class="n">hello</span><span class="p">.</span><span class="n">c</span> <span class="o">&gt;</span> <span class="n">hello</span><span class="p">.</span><span class="n">i</span>
+</span></span></code></pre></div><p>Compilación: el compilador compila el código fuente preprocesado en código ensamblador para un procesador específico. La opción <code>-S</code> especifica producir código ensamblador, en lugar de código objeto. El archivo de ensamblaje resultante es <code>hello.s</code>.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="line"><span class="cl"><span class="n">gcc</span> <span class="o">-</span><span class="n">S</span> <span class="n">hello</span><span class="p">.</span><span class="n">i</span>
+</span></span></code></pre></div><p>Ensamblado: el ensamblador (<code>as.exe</code>) convierte el código ensamblador en código máquina en el fichero objeto <code>hello.o</code>.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="line"><span class="cl"><span class="n">as</span> <span class="o">-</span><span class="n">o</span> <span class="n">hello</span><span class="p">.</span><span class="n">o</span> <span class="n">hello</span><span class="p">.</span><span class="n">s</span>
+</span></span></code></pre></div><p>Enlazador: finalmente, el enlazador (<code>ld.exe</code>) enlaza el código objeto con el código de la biblioteca para producir un archivo ejecutable <code>hello.exe</code>.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="line"><span class="cl"><span class="n">ld</span> <span class="o">-</span><span class="n">o</span> <span class="n">hello</span><span class="p">.</span><span class="n">exe</span> <span class="n">hello</span><span class="p">.</span><span class="n">o</span> <span class="p">...</span><span class="n">libraries</span><span class="p">...</span>
+</span></span></code></pre></div><div class="flex align-center gdoc-page__anchorwrap">
+    <h2 id="el-proceso-de-compilación-un-programa-arduino"
+    >
+        El proceso de compilación un programa Arduino
+    </h2>
+    <a data-clipboard-text="https://lmtreser.github.io/boards/Arduino-Under-The-Hood/gcc/#el-proceso-de-compilación-un-programa-arduino" class="gdoc-page__anchor clip flex align-center" title="Anclado a: El proceso de compilación un programa Arduino" aria-label="Anclado a: El proceso de compilación un programa Arduino" href="#el-proceso-de-compilaci%c3%b3n-un-programa-arduino">
+        <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
+    </a>
+</div>
+<p>El proceso de compilación un programa Arduino involucra varios pasos:</p>
+<ol>
+<li>
+<p><em>Preprocesamiento</em>: En esta fase, el preprocesador de C/C++ maneja las directivas de preprocesamiento, como <code>#include</code> y <code>#define</code>. Los archivos <code>.ino</code> de Arduino son concatenados en un solo archivo <code>.cpp</code> y se añade automáticamente <code>#include &lt;Arduino.h&gt;</code> al principio del archivo.</p>
+</li>
+<li>
+<p><em>Compilación</em>: En esta etapa, el código preprocesado es compilado en código de máquina por el compilador de C/C++ (GCC para Arduino). Esto produce un archivo de objeto para cada archivo de código fuente.</p>
+</li>
+<li>
+<p><em>Ensamblado</em>: Los archivos de ensamblador (<code>.S</code>), si existen, son convertidos en código de máquina para producir archivos de objeto adicionales.</p>
+</li>
+<li>
+<p><em>Enlazado</em>: Todos los archivos de objeto se enlazan juntos para formar un solo archivo ejecutable. Esto incluye la concatenación de las distintas secciones de código y datos, así como la resolución de las referencias a funciones y variables.</p>
+</li>
+<li>
+<p><em>Creación del archivo binario</em>: Finalmente, se crea un archivo binario a partir del archivo ejecutable. Este archivo binario es lo que se carga en la placa Arduino.</p>
+</li>
+</ol>
+<p>Cada uno de estos pasos es controlado por el IDE de Arduino, que configura y llama a las herramientas de compilación apropiadas en el orden correcto.</p>
 <div class="flex align-center gdoc-page__anchorwrap">
     <h2 id="manuales"
     >
@@ -1271,6 +1323,10 @@ Manuales Recursos Estos compiladores se consideran estándar para los sistemas o
     </a>
 </div>
 <ul>
+<li><a
+  class="gdoc-markdown__link"
+  href="https://isnca.org/es/gcc-y-make/"
+>GCC y Make</a></li>
 <li><a
   class="gdoc-markdown__link"
   href="https://es.wikipedia.org/wiki/GNU_Compiler_Collection"
