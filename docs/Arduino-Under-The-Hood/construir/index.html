@@ -12,9 +12,8 @@
 <meta name="generator" content="Hugo 0.127.0">
 
 
-  <meta name="description" content="El
-Manuales Recursos Es
-Manuales GNU C Language Introduction and Reference Manual The GNU C Library Reference Manual The GNU C Reference Manual Recursos GNU Compiler Collection " />
+  <meta name="description" content="Muchas veces iniciamos un proyecto experimentando y probando cosas con nuestra placa Arduino y una protoboard. Luego las cosas se ponen un poco más serias y es necesario dar un paso más, por ejemplo fabricando un circuito impreso o shield para contener todos los componentes adicionales al Arduino. En este artículo veremos como construir un Arduino Uno a medida, es decir, bajo nuestros requerimientos.
+El prototipo estará formado por el microcontrolador, la fuente de alimentación, un teclado de entrada de datos y una interfaz para el control de dos motores paso a paso." />
 
     <title>Construir un Arduino | Boards</title>
 
@@ -40,9 +39,8 @@ Manuales GNU C Language Introduction and Reference Manual The GNU C Library Refe
     content="Construir un Arduino"
   />
   <meta property="og:site_name" content="Boards" />
-  <meta property="og:description" content="El
-Manuales Recursos Es
-Manuales GNU C Language Introduction and Reference Manual The GNU C Library Reference Manual The GNU C Reference Manual Recursos GNU Compiler Collection " />
+  <meta property="og:description" content="Muchas veces iniciamos un proyecto experimentando y probando cosas con nuestra placa Arduino y una protoboard. Luego las cosas se ponen un poco más serias y es necesario dar un paso más, por ejemplo fabricando un circuito impreso o shield para contener todos los componentes adicionales al Arduino. En este artículo veremos como construir un Arduino Uno a medida, es decir, bajo nuestros requerimientos.
+El prototipo estará formado por el microcontrolador, la fuente de alimentación, un teclado de entrada de datos y una interfaz para el control de dos motores paso a paso." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://lmtreser.github.io/boards/Arduino-Under-The-Hood/construir/" />
 
@@ -59,9 +57,8 @@ Manuales GNU C Language Introduction and Reference Manual The GNU C Library Refe
 
   <meta name="twitter:card" content="summary" />
 <meta name="twitter:title" content="Construir un Arduino" />
-  <meta name="twitter:description" content="El
-Manuales Recursos Es
-Manuales GNU C Language Introduction and Reference Manual The GNU C Library Reference Manual The GNU C Reference Manual Recursos GNU Compiler Collection " />
+  <meta name="twitter:description" content="Muchas veces iniciamos un proyecto experimentando y probando cosas con nuestra placa Arduino y una protoboard. Luego las cosas se ponen un poco más serias y es necesario dar un paso más, por ejemplo fabricando un circuito impreso o shield para contener todos los componentes adicionales al Arduino. En este artículo veremos como construir un Arduino Uno a medida, es decir, bajo nuestros requerimientos.
+El prototipo estará formado por el microcontrolador, la fuente de alimentación, un teclado de entrada de datos y una interfaz para el control de dos motores paso a paso." />
 
 
   <script type="application/ld+json">
@@ -72,8 +69,8 @@ Manuales GNU C Language Introduction and Reference Manual The GNU C Library Refe
       "name": "Construir un Arduino",
       "url" : "https://lmtreser.github.io/boards/Arduino-Under-The-Hood/construir/",
       "headline": "Construir un Arduino",
-      "description": "El\nManuales Recursos Es\nManuales GNU C Language Introduction and Reference Manual The GNU C Library Reference Manual The GNU C Reference Manual Recursos GNU Compiler Collection ",
-      "wordCount" : "27",
+      "description": "Muchas veces iniciamos un proyecto experimentando y probando cosas con nuestra placa Arduino y una protoboard. Luego las cosas se ponen un poco más serias y es necesario dar un paso más, por ejemplo fabricando un circuito impreso o shield para contener todos los componentes adicionales al Arduino. En este artículo veremos como construir un Arduino Uno a medida, es decir, bajo nuestros requerimientos.\nEl prototipo estará formado por el microcontrolador, la fuente de alimentación, un teclado de entrada de datos y una interfaz para el control de dos motores paso a paso.",
+      "wordCount" : "597",
       "inLanguage": "es",
       "isFamilyFriendly": "true",
       "mainEntityOfPage": {
@@ -1228,17 +1225,108 @@ Manuales GNU C Language Introduction and Reference Manual The GNU C Library Refe
     class="gdoc-markdown gdoc-markdown__align--left"
   >
     <h1>Construir un Arduino</h1>
-    <p>El</p>
+    <p>Muchas veces iniciamos un proyecto experimentando y probando cosas con nuestra placa Arduino y una protoboard. Luego las cosas se ponen un poco más serias y es necesario dar un paso más, por ejemplo fabricando un circuito impreso o shield para contener todos los componentes adicionales al Arduino. En este artículo veremos como construir un Arduino Uno a medida, es decir, bajo nuestros requerimientos.</p>
+<p>El prototipo estará formado por el microcontrolador, la fuente de alimentación, un teclado de entrada de datos y una interfaz para el control de dos motores paso a paso.</p>
 <div class="gdoc-toc gdoc-toc__level--3">
       <nav id="TableOfContents"><ul>
+        <li><a href="#arduino-breadboard">Arduino Breadboard</a></li>
+        <li><a href="#fuente-de-alimentación">Fuente de alimentación</a></li>
+        <li><a href="#cargando-el-bootloader">Cargando el bootloader</a></li>
+        <li><a href="#problemas-al-cargar-el-bootloader">Problemas al cargar el bootloader</a></li>
+        <li><a href="#conexión-usb-ttl">Conexión USB-TTL</a></li>
         <li><a href="#manuales">Manuales</a></li>
         <li><a href="#recursos">Recursos</a></li>
       </ul></nav>
       <hr />
     </div>
-<p>Es</p>
+<div class="flex align-center gdoc-page__anchorwrap">
+    <h2 id="arduino-breadboard"
+    >
+        Arduino Breadboard
+    </h2>
+    <a data-clipboard-text="https://lmtreser.github.io/boards/Arduino-Under-The-Hood/construir/#arduino-breadboard" class="gdoc-page__anchor clip flex align-center" title="Anclado a: Arduino Breadboard" aria-label="Anclado a: Arduino Breadboard" href="#arduino-breadboard">
+        <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
+    </a>
+</div>
+<p>Investigando en Internet bajo los términos <a
+  class="gdoc-markdown__link"
+  href="https://docs.arduino.cc/built-in-examples/arduino-isp/ArduinoToBreadboard/"
+>Arduino Breadboard</a> o <a
+  class="gdoc-markdown__link"
+  href="https://docs.arduino.cc/retired/hacking/hardware/building-an-arduino-on-a-breadboard/"
+>Arduino Standalone</a> encontraremos muchos proyectos para montar nuestra propia Arduino. El circuito mínimo se basa en un microcontrolador <strong>ATMEGA328-PU</strong>, un cristal de 16MHz, dos capacitores cerámicos y una resistencia.</p>
 <p align="center">
-    <img src="../img/Gcc-4.2.0.png">
+    <img src="../img/arduinocustom.png">
+</p>
+<div class="flex align-center gdoc-page__anchorwrap">
+    <h2 id="fuente-de-alimentación"
+    >
+        Fuente de alimentación
+    </h2>
+    <a data-clipboard-text="https://lmtreser.github.io/boards/Arduino-Under-The-Hood/construir/#fuente-de-alimentación" class="gdoc-page__anchor clip flex align-center" title="Anclado a: Fuente de alimentación" aria-label="Anclado a: Fuente de alimentación" href="#fuente-de-alimentaci%c3%b3n">
+        <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
+    </a>
+</div>
+<p>Nuestra placa Arduino a medida funciona con 5 V de corriente continua, por lo que será necesario contar con un regulador de tensión para poder alimentarla desde una batería de 9V o una fuente. Estoy utilizando el regulador lineal LM7805 junto a algunos componentes más:</p>
+<p align="center">
+    <img src="../img/Regulador.png">
+</p>
+<p>Una vez realizadas todas las conexiones de nuestra fuente de alimentación es importante comprobar que no existan cortocircuitos o problemas de soldadura. Hay que probar con un multímetro que la polaridad y la tensión sean correctas antes de conectar el microcontrolador.</p>
+<div class="flex align-center gdoc-page__anchorwrap">
+    <h2 id="cargando-el-bootloader"
+    >
+        Cargando el bootloader
+    </h2>
+    <a data-clipboard-text="https://lmtreser.github.io/boards/Arduino-Under-The-Hood/construir/#cargando-el-bootloader" class="gdoc-page__anchor clip flex align-center" title="Anclado a: Cargando el bootloader" aria-label="Anclado a: Cargando el bootloader" href="#cargando-el-bootloader">
+        <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
+    </a>
+</div>
+<p>Una vez que nuestro hardware está terminado, es hora de cargar el <strong>bootloader</strong>. Un microcontrolador generalmente se programa a través de un dispositivo programador, a menos que tenga en su memoria un pequeño firmware que permita instalar un nuevo programa sin la necesidad de un programador externo. Esta es la función del bootloader o gestor de arranque.</p>
+<p>Para cargar el bootloader vamos a necesitar una placa Arduino Uno a la que le debemos subir el sketch <strong>ArduinoISP</strong>. Para hacer esto abrimos el sketch desde el menú <strong>Archivo &gt; Ejemplos &gt; 11. ArduinoISP &gt; ArduinoISP</strong>.</p>
+<p>El siguiente paso será conectar la placa Arduino Uno a nuestra placa Arduino «a medida».</p>
+<p align="center">
+    <img src="../img/004.png">
+</p>
+<p>Ahora es necesario cambiar el programador. Vamos al menú <strong>Herramientas &gt; Programador</strong> y elegimos la opción <strong>Arduino as ISP</strong>. Volvemos al menú <strong>Herramientas</strong> y elegimos la opción <strong>Quemar Bootloader</strong>. ¡Listo! Tenemos nuestra placa Arduino lista para poder trabajar.</p>
+<div class="flex align-center gdoc-page__anchorwrap">
+    <h2 id="problemas-al-cargar-el-bootloader"
+    >
+        Problemas al cargar el bootloader
+    </h2>
+    <a data-clipboard-text="https://lmtreser.github.io/boards/Arduino-Under-The-Hood/construir/#problemas-al-cargar-el-bootloader" class="gdoc-page__anchor clip flex align-center" title="Anclado a: Problemas al cargar el bootloader" aria-label="Anclado a: Problemas al cargar el bootloader" href="#problemas-al-cargar-el-bootloader">
+        <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
+    </a>
+</div>
+<p>Puede ocurrir que al intentar cargar el bootloader, el IDE de Arduino informe sobre un error de firma y no permita continuar con el proceso.</p>
+<p align="center">
+    <img src="../img/error.png">
+</p>
+<p>En este caso ocurrió debido a que el microcontrolador que se está utilizando es el ATMEGA328-PU y el que utiliza la placa Arduino Uno es el <strong>ATMEGA328P-PU</strong>. La gran diferencia entre uno y otro es el consumo de energía. Para poder continuar vamos a engañar al IDE modificando el archivo <strong>avrdude.conf</strong>.</p>
+<ul>
+<li>Buscar y abrir la carpeta en la que está instalado Arduino IDE, luego navegar hasta la subcarpeta <code>\hardware\tools\avr\etc</code>.</li>
+<li>Hacer una copia de respaldo del archivo <code>avrdude.conf</code>.</li>
+<li>Abrir el archivo <code>avrdude.conf</code> en un editor de texto.</li>
+<li>Buscar <code>0x1e 0x95 0x0F</code>, que es la firma ATMEGA328P.</li>
+<li>Reemplazarla por <code>0x1e 0x95 0x14</code> (esta es la firma ATMEGA328).</li>
+<li>Guardar el archivo.</li>
+<li>Reiniciar el IDE de Arduino.</li>
+<li>Continuar grabando el bootloader, y una vez que se complete la carga, restaurar la copia de seguridad.</li>
+</ul>
+<p align="center">
+    <img src="../img/003.png">
+</p>
+<div class="flex align-center gdoc-page__anchorwrap">
+    <h2 id="conexión-usb-ttl"
+    >
+        Conexión USB-TTL
+    </h2>
+    <a data-clipboard-text="https://lmtreser.github.io/boards/Arduino-Under-The-Hood/construir/#conexión-usb-ttl" class="gdoc-page__anchor clip flex align-center" title="Anclado a: Conexión USB-TTL" aria-label="Anclado a: Conexión USB-TTL" href="#conexi%c3%b3n-usb-ttl">
+        <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
+    </a>
+</div>
+<p>Para cargar nuestros sketchs deberemos utilizar un adaptador USB-TTL y conectarlo de la siguiente manera:</p>
+<p align="center">
+    <img src="../img/005.png">
 </p>
 <div class="flex align-center gdoc-page__anchorwrap">
     <h2 id="manuales"
@@ -1252,16 +1340,8 @@ Manuales GNU C Language Introduction and Reference Manual The GNU C Library Refe
 <ul>
 <li><a
   class="gdoc-markdown__link"
-  href="../pdf/gcc/GNU_C_Language_Introduction_and_Reference_Manual.pdf"
->GNU C Language Introduction and Reference Manual</a></li>
-<li><a
-  class="gdoc-markdown__link"
-  href="../pdf/gcc/The_GNU_C_Library_Reference_Manual.pdf"
->The GNU C Library Reference Manual</a></li>
-<li><a
-  class="gdoc-markdown__link"
-  href="../pdf/gcc/The_GNU_C_Reference_Manual.pdf"
->The GNU C Reference Manual</a></li>
+  href="../pdf/hacer_un_Arduino.pdf"
+>Arduino por dentro: ¿Cómo hago un Arduino?</a></li>
 </ul>
 <div class="flex align-center gdoc-page__anchorwrap">
     <h2 id="recursos"
@@ -1275,8 +1355,28 @@ Manuales GNU C Language Introduction and Reference Manual The GNU C Library Refe
 <ul>
 <li><a
   class="gdoc-markdown__link"
-  href="https://es.wikipedia.org/wiki/GNU_Compiler_Collection"
->GNU Compiler Collection</a></li>
+  href="https://www.automatismos-mdq.com.ar/blog/2020/05/arduino-a-medida.html"
+>Arduino «a medida»</a></li>
+<li><a
+  class="gdoc-markdown__link"
+  href="https://avrdude.nongnu.org/"
+>AVRDUDE - AVR Downloader/UploaDEr</a></li>
+<li><a
+  class="gdoc-markdown__link"
+  href="https://github.com/avrdudes/avrdude/"
+>AVRDUDE</a></li>
+<li><a
+  class="gdoc-markdown__link"
+  href="https://blog.zakkemble.net/avrdudess-a-gui-for-avrdude/"
+>AVRDUDESS – A GUI for AVRDUDE</a></li>
+<li><a
+  class="gdoc-markdown__link"
+  href="https://www.youtube.com/watch?v=LLErbNB8r-A"
+>Exportar binarios compilados en Arduino</a></li>
+<li><a
+  class="gdoc-markdown__link"
+  href="https://www.youtube.com/watch?v=PakKqgLicos"
+>AVRdudess + USBasp</a></li>
 </ul>
 
   </article>

@@ -83,7 +83,7 @@
       <link>https://lmtreser.github.io/boards/Arduino-Under-The-Hood/construir/</link>
       <pubDate>Thu, 06 Jun 2024 08:00:00 -0300</pubDate>
       <guid>https://lmtreser.github.io/boards/Arduino-Under-The-Hood/construir/</guid>
-      <description>El&#xA;Manuales Recursos Es&#xA;Manuales GNU C Language Introduction and Reference Manual The GNU C Library Reference Manual The GNU C Reference Manual Recursos GNU Compiler Collection </description>
+      <description>Muchas veces iniciamos un proyecto experimentando y probando cosas con nuestra placa Arduino y una protoboard. Luego las cosas se ponen un poco más serias y es necesario dar un paso más, por ejemplo fabricando un circuito impreso o shield para contener todos los componentes adicionales al Arduino. En este artículo veremos como construir un Arduino Uno a medida, es decir, bajo nuestros requerimientos.&#xA;El prototipo estará formado por el microcontrolador, la fuente de alimentación, un teclado de entrada de datos y una interfaz para el control de dos motores paso a paso.</description>
     </item>
   </channel>
 </rss>
