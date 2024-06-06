@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Arduino Under the Hood on Boards</title>
+    <link>https://lmtreser.github.io/boards/Arduino-Under-The-Hood/</link>
+    <description>Recent content in Arduino Under the Hood on Boards</description>
+    <generator>Hugo</generator>
+    <language>es</language>
+    <lastBuildDate>Thu, 06 Jun 2024 08:00:00 -0300</lastBuildDate>
+    <atom:link href="https://lmtreser.github.io/boards/Arduino-Under-The-Hood/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>GNU Compiler Collection</title>
+      <link>https://lmtreser.github.io/boards/Arduino-Under-The-Hood/gcc/</link>
+      <pubDate>Thu, 06 Jun 2024 08:00:00 -0300</pubDate>
+      <guid>https://lmtreser.github.io/boards/Arduino-Under-The-Hood/gcc/</guid>
+      <description>El GNU Compiler Collection (colección de compiladores GNU) es un conjunto de compiladores creados por el proyecto GNU. GCC es software libre y lo distribuye la Free Software Foundation (FSF) bajo la licencia general pública GPL.&#xA;Manuales Recursos Estos compiladores se consideran estándar para los sistemas operativos derivados de UNIX, de código abierto y también de propietarios, como Mac OS X. GCC requiere el conjunto de aplicaciones conocido como binutils para realizar tareas como identificar archivos objeto u obtener su tamaño para copiarlos, traducirlos o crear listas, enlazarlos, o quitarles símbolos innecesarios.</description>
+    </item>
+    <item>
+      <title>El Preprocesador</title>
+      <link>https://lmtreser.github.io/boards/Arduino-Under-The-Hood/preprocessador/</link>
+      <pubDate>Thu, 06 Jun 2024 08:00:00 -0300</pubDate>
+      <guid>https://lmtreser.github.io/boards/Arduino-Under-The-Hood/preprocessador/</guid>
+      <description>El GNU Compiler Collection (colección de compiladores GNU) es un conjunto de compiladores creados por el proyecto GNU. GCC es software libre y lo distribuye la Free Software Foundation (FSF) bajo la licencia general pública GPL.&#xA;Manuales Recursos Estos compiladores se consideran estándar para los sistemas operativos derivados de UNIX, de código abierto y también de propietarios, como Mac OS X. GCC requiere el conjunto de aplicaciones conocido como binutils para realizar tareas como identificar archivos objeto u obtener su tamaño para copiarlos, traducirlos o crear listas, enlazarlos, o quitarles símbolos innecesarios.</description>
+    </item>
+    <item>
+      <title>Depuración</title>
+      <link>https://lmtreser.github.io/boards/Arduino-Under-The-Hood/depuracion/</link>
+      <pubDate>Thu, 06 Jun 2024 08:00:00 -0300</pubDate>
+      <guid>https://lmtreser.github.io/boards/Arduino-Under-The-Hood/depuracion/</guid>
+      <description>GDB o GNU Debugger es el depurador estándar para el compilador GNU. Es un depurador portable que se puede utilizar en varias plataformas Unix y funciona para varios lenguajes de programación como C, C++ y Fortran. GDB fue escrito por Richard Stallman en 1986. GDB es software libre distribuido bajo la licencia GPL.&#xA;Manuales Recursos GDB ofrece la posibilidad de trazar y modificar la ejecución de un programa. El usuario puede controlar y alterar los valores de las variables internas del programa.</description>
+    </item>
+    <item>
+      <title>Construir un Arduino</title>
+      <link>https://lmtreser.github.io/boards/Arduino-Under-The-Hood/construir/</link>
+      <pubDate>Thu, 06 Jun 2024 08:00:00 -0300</pubDate>
+      <guid>https://lmtreser.github.io/boards/Arduino-Under-The-Hood/construir/</guid>
+      <description>El&#xA;Manuales Recursos Es&#xA;Manuales GNU C Language Introduction and Reference Manual The GNU C Library Reference Manual The GNU C Reference Manual Recursos GNU Compiler Collection </description>
+    </item>
+  </channel>
+</rss>

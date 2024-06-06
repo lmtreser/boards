@@ -12,10 +12,10 @@
 <meta name="generator" content="Hugo 0.127.0">
 
 
-  <meta name="description" content="En este tutorial veremos cómo configurar el IDE de Arduino para poder programar placas basadas en el SoC ESP32.
-Especificaciones Instalación del Espressif ESP32 Arduino Core Chips soportados Placas soportadas Recursos ESP32 es la denominación de una familia de chips de bajo costo, con tecnología Wi-Fi y Bluetooth integrada. El ESP32 emplea un CPU Tensilica Xtensa LX6 en sus variantes de simple y doble núcleo. Fue creado y desarrollado por Espressif Systems y es fabricado por TSMC utilizando su proceso de 40 nm." />
+  <meta name="description" content="GDB o GNU Debugger es el depurador estándar para el compilador GNU. Es un depurador portable que se puede utilizar en varias plataformas Unix y funciona para varios lenguajes de programación como C, C&#43;&#43; y Fortran. GDB fue escrito por Richard Stallman en 1986. GDB es software libre distribuido bajo la licencia GPL.
+Manuales Recursos GDB ofrece la posibilidad de trazar y modificar la ejecución de un programa. El usuario puede controlar y alterar los valores de las variables internas del programa." />
 
-    <title>Espressif ESP32 Arduino Core | Boards</title>
+    <title>Depuración | Boards</title>
 
     <link rel="icon" type="image/svg+xml" href="/boards/favicon/favicon.svg" />
 <link
@@ -36,52 +36,52 @@ Especificaciones Instalación del Espressif ESP32 Arduino Core Chips soportados 
     
   <meta
     property="og:title"
-    content="Espressif ESP32 Arduino Core"
+    content="Depuración"
   />
   <meta property="og:site_name" content="Boards" />
-  <meta property="og:description" content="En este tutorial veremos cómo configurar el IDE de Arduino para poder programar placas basadas en el SoC ESP32.
-Especificaciones Instalación del Espressif ESP32 Arduino Core Chips soportados Placas soportadas Recursos ESP32 es la denominación de una familia de chips de bajo costo, con tecnología Wi-Fi y Bluetooth integrada. El ESP32 emplea un CPU Tensilica Xtensa LX6 en sus variantes de simple y doble núcleo. Fue creado y desarrollado por Espressif Systems y es fabricado por TSMC utilizando su proceso de 40 nm." />
+  <meta property="og:description" content="GDB o GNU Debugger es el depurador estándar para el compilador GNU. Es un depurador portable que se puede utilizar en varias plataformas Unix y funciona para varios lenguajes de programación como C, C&#43;&#43; y Fortran. GDB fue escrito por Richard Stallman en 1986. GDB es software libre distribuido bajo la licencia GPL.
+Manuales Recursos GDB ofrece la posibilidad de trazar y modificar la ejecución de un programa. El usuario puede controlar y alterar los valores de las variables internas del programa." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://lmtreser.github.io/boards/Cores/esp32/" />
+<meta property="og:url" content="https://lmtreser.github.io/boards/Arduino-Under-The-Hood/depuracion/" />
 
-<meta property="article:section" content="Cores" />
+<meta property="article:section" content="Arduino Under the Hood" />
     <meta
       property="article:published_time"
-      content="2024-02-24T10:49:32-03:00"
+      content="2024-06-06T08:00:00-03:00"
     />
     <meta
       property="article:modified_time"
-      content="2024-02-24T10:49:32-03:00"
+      content="2024-06-06T08:00:00-03:00"
     />
 
 
   <meta name="twitter:card" content="summary" />
-<meta name="twitter:title" content="Espressif ESP32 Arduino Core" />
-  <meta name="twitter:description" content="En este tutorial veremos cómo configurar el IDE de Arduino para poder programar placas basadas en el SoC ESP32.
-Especificaciones Instalación del Espressif ESP32 Arduino Core Chips soportados Placas soportadas Recursos ESP32 es la denominación de una familia de chips de bajo costo, con tecnología Wi-Fi y Bluetooth integrada. El ESP32 emplea un CPU Tensilica Xtensa LX6 en sus variantes de simple y doble núcleo. Fue creado y desarrollado por Espressif Systems y es fabricado por TSMC utilizando su proceso de 40 nm." />
+<meta name="twitter:title" content="Depuración" />
+  <meta name="twitter:description" content="GDB o GNU Debugger es el depurador estándar para el compilador GNU. Es un depurador portable que se puede utilizar en varias plataformas Unix y funciona para varios lenguajes de programación como C, C&#43;&#43; y Fortran. GDB fue escrito por Richard Stallman en 1986. GDB es software libre distribuido bajo la licencia GPL.
+Manuales Recursos GDB ofrece la posibilidad de trazar y modificar la ejecución de un programa. El usuario puede controlar y alterar los valores de las variables internas del programa." />
 
 
   <script type="application/ld+json">
   {
       "@context": "http://schema.org",
       "@type": "TechArticle",
-      "articleSection": "Cores",
-      "name": "Espressif ESP32 Arduino Core",
-      "url" : "https://lmtreser.github.io/boards/Cores/esp32/",
-      "headline": "Espressif ESP32 Arduino Core",
-      "description": "En este tutorial veremos cómo configurar el IDE de Arduino para poder programar placas basadas en el SoC ESP32.\nEspecificaciones Instalación del Espressif ESP32 Arduino Core Chips soportados Placas soportadas Recursos ESP32 es la denominación de una familia de chips de bajo costo, con tecnología Wi-Fi y Bluetooth integrada. El ESP32 emplea un CPU Tensilica Xtensa LX6 en sus variantes de simple y doble núcleo. Fue creado y desarrollado por Espressif Systems y es fabricado por TSMC utilizando su proceso de 40 nm.",
-      "wordCount" : "970",
+      "articleSection": "Arduino Under the Hood",
+      "name": "Depuración",
+      "url" : "https://lmtreser.github.io/boards/Arduino-Under-The-Hood/depuracion/",
+      "headline": "Depuración",
+      "description": "GDB o GNU Debugger es el depurador estándar para el compilador GNU. Es un depurador portable que se puede utilizar en varias plataformas Unix y funciona para varios lenguajes de programación como C, C\u002b\u002b y Fortran. GDB fue escrito por Richard Stallman en 1986. GDB es software libre distribuido bajo la licencia GPL.\nManuales Recursos GDB ofrece la posibilidad de trazar y modificar la ejecución de un programa. El usuario puede controlar y alterar los valores de las variables internas del programa.",
+      "wordCount" : "117",
       "inLanguage": "es",
       "isFamilyFriendly": "true",
       "mainEntityOfPage": {
           "@type": "WebPage",
-          "@id": "https://lmtreser.github.io/boards/Cores/esp32/"
+          "@id": "https://lmtreser.github.io/boards/Arduino-Under-The-Hood/depuracion/"
       },
       "copyrightHolder" : "Boards",
       "copyrightYear" : "2024",
-      "dateCreated": "2024-02-24T10:49:32.00Z",
-      "datePublished": "2024-02-24T10:49:32.00Z",
-      "dateModified": "2024-02-24T10:49:32.00Z",
+      "dateCreated": "2024-06-06T08:00:00.00Z",
+      "datePublished": "2024-06-06T08:00:00.00Z",
+      "dateModified": "2024-06-06T08:00:00.00Z",
       "publisher":{
           "@type":"Organization",
           "name": "Boards",
@@ -159,7 +159,7 @@ Especificaciones Instalación del Espressif ESP32 Arduino Core Chips soportados 
   href="/boards/custom.css"
   media="all"
 />
-  <link href="https://lmtreser.github.io/boards/Cores/esp32/" rel="canonical" type="text/html" />
+  <link href="https://lmtreser.github.io/boards/Arduino-Under-The-Hood/depuracion/" rel="canonical" type="text/html" />
 
 <!-- Made with Geekdoc theme https://github.com/thegeeklab/hugo-geekdoc -->
 
@@ -493,7 +493,7 @@ Especificaciones Instalación del Espressif ESP32 Arduino Core Chips soportados 
                 <span class="flex">
                   <a
                     href="/boards/Arduino-Under-The-Hood/depuracion/"
-                    class="gdoc-nav__entry"
+                    class="gdoc-nav__entry is-active"
                   >
                     Depuración
                   </a>
@@ -791,7 +791,7 @@ Especificaciones Instalación del Espressif ESP32 Arduino Core Chips soportados 
                 <span class="flex">
                   <a
                     href="/boards/Cores/esp32/"
-                    class="gdoc-nav__entry is-active"
+                    class="gdoc-nav__entry"
                   >
                     Espressif ESP32 Arduino Core
                   </a>
@@ -1206,7 +1206,7 @@ Especificaciones Instalación del Espressif ESP32 Arduino Core Chips soportados 
     
   
   
-    <li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><a itemscope itemtype='https://schema.org/WebPage' itemprop='item' itemid='/boards/' href='/boards/'><span itemprop='name'>Tutoriales Arduino</span></a><meta itemprop='position' content='2' /></li><li> / </li><li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><a itemscope itemtype='https://schema.org/WebPage' itemprop='item' itemid='/boards/Cores/' href='/boards/Cores/'><span itemprop='name'>Cores</span></a><meta itemprop='position' content='3' /></li><li> / </li><li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><span itemprop='name'>Espressif ESP32 Arduino Core</span><meta itemprop='position' content='4' /></li>
+    <li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><a itemscope itemtype='https://schema.org/WebPage' itemprop='item' itemid='/boards/' href='/boards/'><span itemprop='name'>Tutoriales Arduino</span></a><meta itemprop='position' content='2' /></li><li> / </li><li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><a itemscope itemtype='https://schema.org/WebPage' itemprop='item' itemid='/boards/Arduino-Under-The-Hood/' href='/boards/Arduino-Under-The-Hood/'><span itemprop='name'>Arduino Under the Hood</span></a><meta itemprop='position' content='3' /></li><li> / </li><li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><span itemprop='name'>Depuración</span><meta itemprop='position' content='4' /></li>
   
 
   
@@ -1224,611 +1224,56 @@ Especificaciones Instalación del Espressif ESP32 Arduino Core Chips soportados 
   <article
     class="gdoc-markdown gdoc-markdown__align--left"
   >
-    <h1>Espressif ESP32 Arduino Core</h1>
-    <p>En este tutorial veremos cómo configurar el IDE de Arduino para poder programar placas basadas en el SoC <strong>ESP32</strong>.</p>
+    <h1>Depuración</h1>
+    <p>GDB o GNU Debugger es el depurador estándar para el compilador GNU. Es un depurador portable que se puede utilizar en varias plataformas Unix y funciona para varios lenguajes de programación como C, C++ y Fortran. GDB fue escrito por Richard Stallman en 1986. GDB es software libre distribuido bajo la licencia GPL.</p>
 <div class="gdoc-toc gdoc-toc__level--3">
       <nav id="TableOfContents"><ul>
-        <li><a href="#especificaciones">Especificaciones</a></li>
-        <li><a href="#instalación-del-espressif-esp32-arduino-core">Instalación del Espressif ESP32 Arduino Core</a></li>
-        <li><a href="#chips-soportados">Chips soportados</a></li>
-        <li><a href="#placas-soportadas">Placas soportadas</a></li>
+        <li><a href="#manuales">Manuales</a></li>
         <li><a href="#recursos">Recursos</a></li>
       </ul></nav>
       <hr />
     </div>
-<p><strong>ESP32</strong> es la denominación de una familia de chips de bajo costo, con tecnología Wi-Fi y Bluetooth integrada. El ESP32 emplea un CPU Tensilica Xtensa LX6 en sus variantes de simple y doble núcleo. Fue creado y desarrollado por Espressif Systems y es fabricado por TSMC utilizando su proceso de 40 nm. <a
-  class="gdoc-markdown__link"
-  href="https://en.m.wikipedia.org/wiki/ESP32"
->Más en Wikipedia</a>.</p>
+<p>GDB ofrece la posibilidad de trazar y modificar la ejecución de un programa. El usuario puede controlar y alterar los valores de las variables internas del programa. GDB no contiene su propia interfaz gráfica de usuario y por defecto se controla mediante una interfaz de línea de comandos.</p>
 <p align="center">
-    <img src="../img/esp32.png">
+    <img src="../img/GDB_Screenshot.png">
 </p>
 <div class="flex align-center gdoc-page__anchorwrap">
-    <h2 id="especificaciones"
+    <h2 id="manuales"
     >
-        Especificaciones
+        Manuales
     </h2>
-    <a data-clipboard-text="https://lmtreser.github.io/boards/Cores/esp32/#especificaciones" class="gdoc-page__anchor clip flex align-center" title="Anclado a: Especificaciones" aria-label="Anclado a: Especificaciones" href="#especificaciones">
+    <a data-clipboard-text="https://lmtreser.github.io/boards/Arduino-Under-The-Hood/depuracion/#manuales" class="gdoc-page__anchor clip flex align-center" title="Anclado a: Manuales" aria-label="Anclado a: Manuales" href="#manuales">
         <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
     </a>
 </div>
 <ul>
-<li>Microprocesador de 32-bit Xtensa LX6 de doble núcleo (o de un solo núcleo), corriendo a 160 ó 240 MHz</li>
-<li>SRAM 520 KiB</li>
-<li>Wi-Fi 802.11 b/g/n</li>
-<li>Bluetooth v4.2 BR/EDR y BLE</li>
-<li>12-bit SAR ADC de hasta 18 canales</li>
-<li>2 × 8-bit DACs</li>
-<li>10 × sensores de tacto</li>
-<li>SPI × 4, I2S × 2, I2C × 2, UART × 3</li>
-<li>Controlador host SD/SDIO/CE-ATA/MMC/eMMC</li>
-<li>Controlador esclavo SDIO/SPI</li>
+<li><a
+  class="gdoc-markdown__link"
+  href="../pdf/gdb/Debugging_with_gdb.pdf"
+>Debugging with gdb</a></li>
+<li><a
+  class="gdoc-markdown__link"
+  href="../pdf/gdb/GDB_Quick_Reference.pdf"
+>GDB Quick Reference</a></li>
+<li><a
+  class="gdoc-markdown__link"
+  href="../pdf/gdb/The_stabs_debug_format.pdf"
+>The stabs debug format</a></li>
 </ul>
-<div class="flex align-center gdoc-page__anchorwrap">
-    <h2 id="instalación-del-espressif-esp32-arduino-core"
-    >
-        Instalación del Espressif ESP32 Arduino Core
-    </h2>
-    <a data-clipboard-text="https://lmtreser.github.io/boards/Cores/esp32/#instalación-del-espressif-esp32-arduino-core" class="gdoc-page__anchor clip flex align-center" title="Anclado a: Instalación del Espressif ESP32 Arduino Core" aria-label="Anclado a: Instalación del Espressif ESP32 Arduino Core" href="#instalaci%c3%b3n-del-espressif-esp32-arduino-core">
-        <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
-    </a>
-</div>
-<blockquote>
-<p>Este tutorial está realizado con la versión 2.3.2 de Arduino IDE, aunque el procedimiento es similar para versiones anteriores.</p>
-</blockquote>
-<p>Para poder instalar el Core ESP32 debemos seguir los mismos pasos explicados en el tutorial <a
-  class="gdoc-markdown__link"
-  href="../esp8266/"
->Espressif ESP8266 Arduino Core</a> con una diferencia: en la ventana <code>URLs adicionales de gestor de placas</code> debemos agregar la siguiente línea:</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl">https://espressif.github.io/arduino-esp32/package_esp32_index.json
-</span></span></code></pre></div><p>Luego, en el <code>Gestor de placas</code> buscaremos el Core ESP32 como <code>esp32</code> para instalarlo.</p>
-<img
-  src="../img/esp32.gif"
-  alt=""
-  
-/><p>Una vez finalizado el proceso, desde el menú <code>Herramientas » Placa » esp32</code> podremos acceder al listado de placas soportado.</p>
-<div class="flex align-center gdoc-page__anchorwrap">
-    <h2 id="chips-soportados"
-    >
-        Chips soportados
-    </h2>
-    <a data-clipboard-text="https://lmtreser.github.io/boards/Cores/esp32/#chips-soportados" class="gdoc-page__anchor clip flex align-center" title="Anclado a: Chips soportados" aria-label="Anclado a: Chips soportados" href="#chips-soportados">
-        <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
-    </a>
-</div>
-<p>A continuación la lista de la serie ESP32 compatible con el proyecto Arduino-ESP32. Más detalles en <a
-  class="gdoc-markdown__link"
-  href="https://docs.espressif.com/projects/arduino-esp32/en/latest/getting_started.html#supported-soc-s"
->supported chips</a>:</p>
-<div class="table-wrap"> <table>
-<thead>
-<tr>
-<th><strong>SoC</strong></th>
-<th style="text-align:center"><strong>Stable</strong></th>
-<th style="text-align:center"><strong>Development</strong></th>
-<th style="text-align:center"><strong>Datasheet</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>ESP32</td>
-<td style="text-align:center">Yes</td>
-<td style="text-align:center">Yes</td>
-<td style="text-align:center"><a
-  class="gdoc-markdown__link"
-  href="https://www.espressif.com/sites/default/files/documentation/esp32_datasheet_en.pdf"
->ESP32</a></td>
-</tr>
-<tr>
-<td>ESP32-S2</td>
-<td style="text-align:center">Yes</td>
-<td style="text-align:center">Yes</td>
-<td style="text-align:center"><a
-  class="gdoc-markdown__link"
-  href="https://www.espressif.com/sites/default/files/documentation/esp32-s2_datasheet_en.pdf"
->ESP32-S2</a></td>
-</tr>
-<tr>
-<td>ESP32-C3</td>
-<td style="text-align:center">Yes</td>
-<td style="text-align:center">Yes</td>
-<td style="text-align:center"><a
-  class="gdoc-markdown__link"
-  href="https://www.espressif.com/sites/default/files/documentation/esp32-c3_datasheet_en.pdf"
->ESP32-C3</a></td>
-</tr>
-<tr>
-<td>ESP32-S3</td>
-<td style="text-align:center">Yes</td>
-<td style="text-align:center">Yes</td>
-<td style="text-align:center"><a
-  class="gdoc-markdown__link"
-  href="https://www.espressif.com/sites/default/files/documentation/esp32-s3_datasheet_en.pdf"
->ESP32-S3</a></td>
-</tr>
-<tr>
-<td>ESP32-C6</td>
-<td style="text-align:center">No</td>
-<td style="text-align:center">Yes</td>
-<td style="text-align:center"><a
-  class="gdoc-markdown__link"
-  href="https://www.espressif.com/sites/default/files/documentation/esp32-c6_datasheet_en.pdf"
->ESP32-C6</a></td>
-</tr>
-<tr>
-<td>ESP32-H2</td>
-<td style="text-align:center">No</td>
-<td style="text-align:center">Yes</td>
-<td style="text-align:center"><a
-  class="gdoc-markdown__link"
-  href="https://www.espressif.com/sites/default/files/documentation/esp32-h2_datasheet_en.pdf"
->ESP32-H2</a></td>
-</tr>
-</tbody>
-</table> </div>
-<div class="flex align-center gdoc-page__anchorwrap">
-    <h2 id="placas-soportadas"
-    >
-        Placas soportadas
-    </h2>
-    <a data-clipboard-text="https://lmtreser.github.io/boards/Cores/esp32/#placas-soportadas" class="gdoc-page__anchor clip flex align-center" title="Anclado a: Placas soportadas" aria-label="Anclado a: Placas soportadas" href="#placas-soportadas">
-        <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
-    </a>
-</div>
-<div class="table-wrap"> <table>
-<thead>
-<tr>
-<th></th>
-<th></th>
-<th></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>4D Systems gen4-ESP32 16MB Modules (ESP32-S3R8n16)</td>
-<td>FireBeetle 2 ESP32-E</td>
-<td>OLIMEX ESP32-EVB</td>
-</tr>
-<tr>
-<td>Adafruit ESP32 Feather</td>
-<td>FireBeetle-ESP32</td>
-<td>OLIMEX ESP32-GATEWAY</td>
-</tr>
-<tr>
-<td>Adafruit Feather ESP32 V2</td>
-<td>Franzininho WiFi</td>
-<td>OLIMEX ESP32-H2-DevKit-LiPo</td>
-</tr>
-<tr>
-<td>Adafruit Feather ESP32-S2</td>
-<td>Franzininho WiFi MSC</td>
-<td>OLIMEX ESP32-POE</td>
-</tr>
-<tr>
-<td>Adafruit Feather ESP32-S2 Reverse TFT</td>
-<td>Frog Board ESP32</td>
-<td>OLIMEX ESP32-POE-ISO</td>
-</tr>
-<tr>
-<td>Adafruit Feather ESP32-S2 TFT</td>
-<td>Geekble ESP32-C3</td>
-<td>OLIMEX ESP32-S2-DevKit-Lipo</td>
-</tr>
-<tr>
-<td>Adafruit Feather ESP32-S3 2MB PSRAM</td>
-<td>Heltec WiFi Kit 32</td>
-<td>OLIMEX ESP32-S2-DevKit-Lipo-USB</td>
-</tr>
-<tr>
-<td>Adafruit Feather ESP32-S3 No PSRAM</td>
-<td>Heltec WiFi Kit 32(V3)</td>
-<td>OLIMEX ESP32-S3-DevKit-Lipo</td>
-</tr>
-<tr>
-<td>Adafruit Feather ESP32-S3 Reverse TFT</td>
-<td>Heltec WiFi LoRa 32</td>
-<td>OLIMEX ESP32-SBC-FABGL</td>
-</tr>
-<tr>
-<td>Adafruit Feather ESP32-S3 TFT</td>
-<td>Heltec WiFi LoRa 32(V2)</td>
-<td>Onehorse ESP32 Dev Module</td>
-</tr>
-<tr>
-<td>Adafruit FunHouse</td>
-<td>Heltec WiFi LoRa 32(V3) / Wireless shell(V3) / Wireless stick lite (V3)</td>
-<td>OROCA EduBot</td>
-</tr>
-<tr>
-<td>Adafruit ItsyBitsy ESP32</td>
-<td>Heltec Wireless Stick</td>
-<td>Piranha ESP-32</td>
-</tr>
-<tr>
-<td>Adafruit MagTag 2.9</td>
-<td>Heltec Wireless Stick Lite</td>
-<td>ProtoCentral HealthyPi 4</td>
-</tr>
-<tr>
-<td>Adafruit MatrixPortal ESP32-S3</td>
-<td>Heltec Wireless Tracker</td>
-<td>Pycom GPy</td>
-</tr>
-<tr>
-<td>Adafruit Metro ESP32-S2</td>
-<td>HONEYLemon</td>
-<td>RedPill(+) ESP32-S3</td>
-</tr>
-<tr>
-<td>Adafruit Metro ESP32-S3</td>
-<td>Hornbill ESP32 Dev</td>
-<td>RoboHeart Hercules</td>
-</tr>
-<tr>
-<td>Adafruit pyCamera S3</td>
-<td>Hornbill ESP32 Minima</td>
-<td>S.ODI Ultra v1</td>
-</tr>
-<tr>
-<td>Adafruit QT Py ESP32</td>
-<td>IMBRIOS LOGSENS_V1P1</td>
-<td>senseBox MCU-S2 ESP32-S2</td>
-</tr>
-<tr>
-<td>Adafruit QT Py ESP32-C3</td>
-<td>INEX OpenKB</td>
-<td>Senses&rsquo;s WEIZEN</td>
-</tr>
-<tr>
-<td>Adafruit QT Py ESP32-S2</td>
-<td>IntoRobot Fig</td>
-<td>Silicognition wESP32</td>
-</tr>
-<tr>
-<td>Adafruit QT Py ESP32-S3 (4M Flash 2M PSRAM)</td>
-<td>IOXESP32</td>
-<td>Sonoff DUALR3</td>
-</tr>
-<tr>
-<td>Adafruit QT Py ESP32-S3 No PSRAM</td>
-<td>IOXESP32PS</td>
-<td>SparkFun ESP32 IoT RedBoard</td>
-</tr>
-<tr>
-<td>Adafruit Qualia ESP32-S3 RGB666</td>
-<td>KB32-FT</td>
-<td>SparkFun ESP32 MicroMod</td>
-</tr>
-<tr>
-<td>AI Thinker ESP32-CAM</td>
-<td>KITS ESP32 EDU</td>
-<td>SparkFun ESP32 Thing</td>
-</tr>
-<tr>
-<td>AirM2M_CORE_ESP32C3</td>
-<td>Labplus mPython</td>
-<td>SparkFun ESP32 Thing Plus</td>
-</tr>
-<tr>
-<td>ALKS ESP32</td>
-<td>LilyGo T-Display</td>
-<td>SparkFun ESP32 Thing Plus C</td>
-</tr>
-<tr>
-<td>Arduino Nano ESP32</td>
-<td>LilyGo T-Display-S3</td>
-<td>SparkFun ESP32-C6 Qwiic Pocket</td>
-</tr>
-<tr>
-<td>Arduino on Nano ESP32</td>
-<td>Lion:Bit Dev Board</td>
-<td>SparkFun ESP32-C6 Thing Plus</td>
-</tr>
-<tr>
-<td>ATD1.47-S3</td>
-<td>Lion:Bit S3 STEM Dev Board</td>
-<td>SparkFun ESP32-S2 Thing Plus</td>
-</tr>
-<tr>
-<td>ATMegaZero ESP32-S2</td>
-<td>LOLIN C3 Mini</td>
-<td>SparkFun LoRa Gateway 1-Channel</td>
-</tr>
-<tr>
-<td>Aventen S3 Sync</td>
-<td>LOLIN D32</td>
-<td>SparkFun Pro Micro - ESP32C3</td>
-</tr>
-<tr>
-<td>Bee Data Logger</td>
-<td>LOLIN D32 PRO</td>
-<td>T-Beam</td>
-</tr>
-<tr>
-<td>Bee Motion</td>
-<td>LOLIN S2 Mini</td>
-<td>TAMC Termod S3</td>
-</tr>
-<tr>
-<td>Bee Motion Mini</td>
-<td>LOLIN S2 PICO</td>
-<td>ThaiEasyElec&rsquo;s ESPino32</td>
-</tr>
-<tr>
-<td>Bee Motion S3</td>
-<td>LOLIN S3</td>
-<td>ThingPulse ePulse Feather</td>
-</tr>
-<tr>
-<td>Bee S3</td>
-<td>LOLIN S3 Mini</td>
-<td>Trueverit ESP32 Universal IoT Driver</td>
-</tr>
-<tr>
-<td>BPI-BIT</td>
-<td>LOLIN S3 Pro</td>
-<td>Trueverit ESP32 Universal IoT Driver MK II</td>
-</tr>
-<tr>
-<td>BPI-Leaf-S3</td>
-<td>LoPy</td>
-<td>TTGO LoRa32-OLED</td>
-</tr>
-<tr>
-<td>CNRS AW2ETH</td>
-<td>LoPy4</td>
-<td>TTGO T-OI PLUS RISC-V ESP32-C3</td>
-</tr>
-<tr>
-<td>Connaxio&rsquo;s Espoir</td>
-<td>M5Atom</td>
-<td>TTGO T-Watch</td>
-</tr>
-<tr>
-<td>Crabik Slot ESP32-S3</td>
-<td>M5AtomS3</td>
-<td>TTGO T1</td>
-</tr>
-<tr>
-<td>Cytron Maker Feather AIoT S3</td>
-<td>M5Capsule</td>
-<td>TTGO T7 V1.3 Mini32</td>
-</tr>
-<tr>
-<td>D-duino-32</td>
-<td>M5Cardputer</td>
-<td>TTGO T7 V1.4 Mini32</td>
-</tr>
-<tr>
-<td>Deneyap Kart</td>
-<td>M5Core</td>
-<td>Turta IoT Node</td>
-</tr>
-<tr>
-<td>Deneyap Kart 1A</td>
-<td>M5Core2</td>
-<td>u-blox NINA-W10 series (ESP32)</td>
-</tr>
-<tr>
-<td>Deneyap Kart 1A v2</td>
-<td>M5CoreInk</td>
-<td>u-blox NORA-W10 series (ESP32-S3)</td>
-</tr>
-<tr>
-<td>Deneyap Kart G</td>
-<td>M5CoreS3</td>
-<td>UM BLING</td>
-</tr>
-<tr>
-<td>Deneyap Mini</td>
-<td>M5Dial</td>
-<td>UM FeatherS2</td>
-</tr>
-<tr>
-<td>Deneyap Mini v2</td>
-<td>M5Fire</td>
-<td>UM FeatherS2 Neo</td>
-</tr>
-<tr>
-<td>Denky</td>
-<td>M5Paper</td>
-<td>UM FeatherS3</td>
-</tr>
-<tr>
-<td>Department of Alchemy MiniMain ESP32-S2</td>
-<td>M5PoECAM</td>
-<td>UM NanoS3</td>
-</tr>
-<tr>
-<td>DFRobot Beetle ESP32-C3</td>
-<td>M5StampC3</td>
-<td>UM PROS3</td>
-</tr>
-<tr>
-<td>DFRobot Beetle ESP32-C6</td>
-<td>M5StampPico</td>
-<td>UM RMP</td>
-</tr>
-<tr>
-<td>DFRobot FireBeetle 2 ESP32-C6</td>
-<td>M5StampS3</td>
-<td>UM TinyC6</td>
-</tr>
-<tr>
-<td>DFRobot Firebeetle 2 ESP32-S3</td>
-<td>M5Station</td>
-<td>UM TinyPICO</td>
-</tr>
-<tr>
-<td>DFRobot Romeo ESP32-S3</td>
-<td>M5StickC</td>
-<td>UM TinyS2</td>
-</tr>
-<tr>
-<td>DOIT ESP32 DEVKIT V1</td>
-<td>M5StickCPlus</td>
-<td>UM TinyS3</td>
-</tr>
-<tr>
-<td>DOIT ESPduino32</td>
-<td>M5StickCPlus2</td>
-<td>unPhone 7</td>
-</tr>
-<tr>
-<td>Dongsen Tech Pocket 32</td>
-<td>M5TimerCAM</td>
-<td>unPhone 8</td>
-</tr>
-<tr>
-<td>DPU ESP32</td>
-<td>M5Tough</td>
-<td>unPhone 9</td>
-</tr>
-<tr>
-<td>Edgebox-ESP-100</td>
-<td>M5UnitCAM</td>
-<td>uPesy EDU ESP32</td>
-</tr>
-<tr>
-<td>Electronic SweetPeas - ESP320</td>
-<td>M5UnitCAMS3</td>
-<td>uPesy ESP32 Wroom DevKit</td>
-</tr>
-<tr>
-<td>ESP-C3-M1-I-Kit</td>
-<td>MagicBit</td>
-<td>uPesy ESP32 Wrover DevKit</td>
-</tr>
-<tr>
-<td>ESP32 Dev Module</td>
-<td>MakerGO ESP32 C3 SuperMini</td>
-<td>uPesy ESP32C3 Basic</td>
-</tr>
-<tr>
-<td>ESP32 FM DevKit</td>
-<td>Metro ESP-32</td>
-<td>uPesy ESP32C3 Mini</td>
-</tr>
-<tr>
-<td>ESP32 PICO-D4</td>
-<td>MGBOT IOTIK 32A</td>
-<td>uPesy ESP32S3 Basic</td>
-</tr>
-<tr>
-<td>ESP32 Wrover Kit (all versions)</td>
-<td>MGBOT IOTIK 32B</td>
-<td>VALTRACK_V4_MFW_ESP32_C3</td>
-</tr>
-<tr>
-<td>ESP32 Wrover Module</td>
-<td>MH ET LIVE ESP32DevKIT</td>
-<td>VALTRACK_V4_VTS_ESP32_C3</td>
-</tr>
-<tr>
-<td>ESP32-S3 PowerFeather</td>
-<td>MH ET LIVE ESP32MiniKit</td>
-<td>VintLabs ESP32 Devkit</td>
-</tr>
-<tr>
-<td>ESP32-S3-Box</td>
-<td>Microduino-CoreESP32</td>
-<td>Watchy</td>
-</tr>
-<tr>
-<td>ESP32-S3-USB-OTG</td>
-<td>microS2</td>
-<td>WEMOS D1 MINI ESP32</td>
-</tr>
-<tr>
-<td>ESP32-WROOM-DA Module</td>
-<td>Namino Arancio</td>
-<td>WEMOS D1 R32</td>
-</tr>
-<tr>
-<td>ESP32C2 Dev Module</td>
-<td>Namino Bianco</td>
-<td>WEMOS LOLIN32</td>
-</tr>
-<tr>
-<td>ESP32C3 Dev Module</td>
-<td>Namino Rosso</td>
-<td>WEMOS LOLIN32 Lite</td>
-</tr>
-<tr>
-<td>ESP32C6 Dev Module</td>
-<td>Nano32</td>
-<td>WeMos WiFi&amp;Bluetooth Battery</td>
-</tr>
-<tr>
-<td>ESP32H2 Dev Module</td>
-<td>Nebula S3</td>
-<td>Widora AIR</td>
-</tr>
-<tr>
-<td>ESP32S2 Dev Module</td>
-<td>Node32s</td>
-<td>WiFiduino32</td>
-</tr>
-<tr>
-<td>ESP32S2 Native USB</td>
-<td>NodeMCU-32S</td>
-<td>WiFiduino32S3</td>
-</tr>
-<tr>
-<td>ESP32S3 CAM LCD</td>
-<td>Noduino Quantum</td>
-<td>WiFiduinoV2</td>
-</tr>
-<tr>
-<td>ESP32S3 Dev Module</td>
-<td>Nologo ESP32C3 Super Mini</td>
-<td>WiPy 3.0</td>
-</tr>
-<tr>
-<td>ESP32S3 Dev Module Octal (WROOM2)</td>
-<td>Nologo ESP32S3 Pico</td>
-<td>WT32-ETH01 Ethernet Module</td>
-</tr>
-<tr>
-<td>ESP32vn IoT Uno</td>
-<td>ODROID ESP32</td>
-<td>WT32-SC01 PLUS</td>
-</tr>
-<tr>
-<td>ESPea32</td>
-<td>OLIMEX ESP32-C3-DevKit-Lipo</td>
-<td>XIAO_ESP32C3</td>
-</tr>
-<tr>
-<td>ESPectro32</td>
-<td>OLIMEX ESP32-C6-EVB</td>
-<td>XIAO_ESP32S3</td>
-</tr>
-<tr>
-<td>ET-Board</td>
-<td>OLIMEX ESP32-DevKit-LiPo</td>
-<td>XinaBox CW02</td>
-</tr>
-</tbody>
-</table> </div>
 <div class="flex align-center gdoc-page__anchorwrap">
     <h2 id="recursos"
     >
         Recursos
     </h2>
-    <a data-clipboard-text="https://lmtreser.github.io/boards/Cores/esp32/#recursos" class="gdoc-page__anchor clip flex align-center" title="Anclado a: Recursos" aria-label="Anclado a: Recursos" href="#recursos">
+    <a data-clipboard-text="https://lmtreser.github.io/boards/Arduino-Under-The-Hood/depuracion/#recursos" class="gdoc-page__anchor clip flex align-center" title="Anclado a: Recursos" aria-label="Anclado a: Recursos" href="#recursos">
         <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
     </a>
 </div>
 <ul>
 <li><a
   class="gdoc-markdown__link"
-  href="https://github.com/espressif/arduino-esp32"
->Arduino core for the ESP32 </a></li>
-<li><a
-  class="gdoc-markdown__link"
-  href="https://docs.espressif.com/projects/arduino-esp32/en/latest/index.html"
->ESP32 Arduino Core’s documentation</a></li>
+  href="https://es.wikipedia.org/wiki/GNU_Debugger"
+>GNU Debugger</a></li>
 </ul>
 
   </article>
@@ -1974,231 +1419,6 @@ Especificaciones Instalación del Espressif ESP32 Arduino Core Chips soportados 
         
 
         
-
-        
-          
-        
-
-        
-        
-      
-    
-
-  
-    
-
-    
-      
-    
-
-    
-      
-      
-
-      
-        
-        
-        
-        
-
-        
-        
-
-        
-
-        
-
-        
-          
-        
-
-        
-        
-      
-    
-
-  
-
-        
-      
-    
-      
-      
-
-      
-        
-        
-        
-        
-
-        
-        
-
-        
-
-        
-
-        
-
-        
-        
-          
-  
-  
-
-  
-  
-    
-
-    
-      
-    
-
-    
-      
-      
-
-      
-        
-        
-        
-        
-
-        
-        
-
-        
-
-        
-
-        
-          
-        
-
-        
-        
-      
-    
-
-  
-    
-
-    
-      
-    
-
-    
-      
-      
-
-      
-        
-        
-        
-        
-
-        
-        
-
-        
-
-        
-
-        
-          
-        
-
-        
-        
-      
-    
-
-  
-
-        
-      
-    
-      
-      
-
-      
-        
-        
-        
-        
-
-        
-        
-
-        
-
-        
-
-        
-
-        
-        
-          
-  
-  
-
-  
-  
-    
-
-    
-      
-    
-
-    
-      
-      
-
-      
-        
-        
-        
-        
-
-        
-        
-
-        
-
-        
-
-        
-          
-        
-
-        
-        
-      
-    
-
-  
-    
-
-    
-      
-    
-
-    
-      
-      
-
-      
-        
-        
-        
-        
-
-        
-        
-
-        
-
-        
           
           
         
@@ -2237,6 +1457,231 @@ Especificaciones Instalación del Espressif ESP32 Arduino Core Chips soportados 
             
             
           
+        
+
+        
+
+        
+          
+        
+
+        
+        
+      
+    
+
+  
+
+        
+      
+    
+      
+      
+
+      
+        
+        
+        
+        
+
+        
+        
+
+        
+
+        
+
+        
+
+        
+        
+          
+  
+  
+
+  
+  
+    
+
+    
+      
+    
+
+    
+      
+      
+
+      
+        
+        
+        
+        
+
+        
+        
+
+        
+
+        
+
+        
+          
+        
+
+        
+        
+      
+    
+
+  
+    
+
+    
+      
+    
+
+    
+      
+      
+
+      
+        
+        
+        
+        
+
+        
+        
+
+        
+
+        
+
+        
+          
+        
+
+        
+        
+      
+    
+
+  
+
+        
+      
+    
+      
+      
+
+      
+        
+        
+        
+        
+
+        
+        
+
+        
+
+        
+
+        
+
+        
+        
+          
+  
+  
+
+  
+  
+    
+
+    
+      
+    
+
+    
+      
+      
+
+      
+        
+        
+        
+        
+
+        
+        
+
+        
+
+        
+
+        
+          
+        
+
+        
+        
+      
+    
+
+  
+    
+
+    
+      
+    
+
+    
+      
+      
+
+      
+        
+        
+        
+        
+
+        
+        
+
+        
+
+        
+
+        
+          
+        
+
+        
+        
+      
+    
+
+  
+    
+
+    
+      
+    
+
+    
+      
+      
+
+      
+        
+        
+        
+        
+
+        
+        
+
         
 
         
@@ -2361,11 +1806,11 @@ Especificaciones Instalación del Espressif ESP32 Arduino Core Chips soportados 
   
     <a
       class="gdoc-page__nav--prev flex align-center"
-      href="/boards/Cores/esp8266/"
-      title="Espressif ESP8266 Arduino Core"
+      href="/boards/Arduino-Under-The-Hood/preprocessador/"
+      title="El Preprocesador"
     >
       <i class="gdoc-icon">gdoc_arrow_left_alt</i>
-      Espressif ESP8266 Arduino Core
+      El Preprocesador
     </a>
   
 </span>
@@ -2373,10 +1818,10 @@ Especificaciones Instalación del Espressif ESP32 Arduino Core Chips soportados 
   
     <a
       class="gdoc-page__nav--next flex align-center"
-      href="/boards/Cores/pico/"
-      title="Raspberry Pi Pico Arduino Core"
+      href="/boards/Arduino-Under-The-Hood/construir/"
+      title="Construir un Arduino"
     >
-      Raspberry Pi Pico Arduino Core
+      Construir un Arduino
       <i class="gdoc-icon">gdoc_arrow_right_alt</i>
     </a>
   
